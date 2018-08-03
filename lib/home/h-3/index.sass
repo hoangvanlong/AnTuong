@@ -1,0 +1,39 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+	
+section.canhcam-home-3
+	+pad(3rem null)
+	background: darken(color-get($mau,trang),5%)
+	.item
+		text-decoration: none
+		figure
+			.boxzoom
+				overflow: hidden
+			figcaption
+				+pad(1rem null)
+				.time
+					+fz(.9rem)
+					color: color-get($mau,text-3)
+					margin-bottom: 1rem
+				h5
+					+fz(1.2rem)
+					+fw(700)
+					color: color-get($mau,text-1)
+					margin-bottom: 1rem
+				p
+					+fz(1rem)
+					color: color-get($mau,text-2)
+				span
+					text-transform: uppercase
+					+pad(.2rem .4rem)
+					+fz(.8rem)
+					background: color-get($mau,extra)
+					color: color-get($mau,text-1)
+					+bor-rad(5px)
+			&:hover
+				.boxzoom
+					img
+						transform: scale(1.1)
+						transition: .3s ease-in-out

@@ -1,0 +1,31 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-boxes-3
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.number
+		.item
+			min-height: 180px
+			padding: 2rem 0
+		.content
+			align-items: center
+			.count
+				display: flex
+				align-items: center
+				justify-content: center
+				+pad(2rem)
+				height: 150px
+				width: 150px
+				+bor-rad(50%)
+				background: color-get($mau,extra)
+				h5
+					+fz(2.5rem)
+					+fw(700)
+					margin-bottom: 0
+				span
+					+fz(2.5rem)
+					+fw(700)
