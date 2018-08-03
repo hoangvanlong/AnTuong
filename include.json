@@ -1,0 +1,60 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "boxes/b-1"
+            ],
+            "footer": [
+                "footer/f-1",
+                "footer/f-7"
+            ]
+        },
+        "about": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "boxes/b-1",
+                "boxes/b-2"
+            ],
+            "footer": [
+                "footer/f-1",
+                "footer/f-7"
+            ]
+        },
+        "product": {
+            "body": [
+                "pagination/p-1"
+            ]
+        },
+        "project-detail": {
+            "body": [
+                "breadcrumb/b-1",
+                "pagination/p-1"
+            ]
+        },
+        "sale-detail": {
+            "body": [
+                "tabs/t-2"
+            ]
+        },
+        "blog-detail": {
+            "body": [
+                "news-details/n-1"
+            ]
+        },
+        "pay": {
+            "body": [
+                "boxes/b-9"
+            ]
+        },
+        "contact": {
+            "body": [
+                "form/f-1"
+            ]
+        }
+    }
+}
