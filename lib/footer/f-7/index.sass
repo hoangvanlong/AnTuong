@@ -4,48 +4,76 @@
 //////////////////////////////////////
 
 .canhcam-footer-7
+	background: darken(color-get($mau,trang), 5%)
+	position: relative
+	+pad(2rem null)
+	&:before
+		content: ''
+		height: 3px
+		width: 100%
+		background: url('../img/antuong/line.png')
+		+pos(abs,0 null null 0)
+		background-position: center center
+		background-size: cover
 	.footer-content
-		background: lighten(color-get($mau,main), 0%)
-		color: lighten(color-get($mau,trang), 0%)
-		padding: 2rem 0
-		font-weight: 200
+		color: lighten(color-get($mau,text-1), 0%)
+		font-weight: 400
 		h6
 			font-size: 1rem 
 			margin-bottom: 1rem 
-			color: lighten(color-get($mau,trang), 0%) 
-		.slogan 
-			.logo 
-				a
-					display: block
-				img 
-					max-width: 200px 
-			.quote
-				color: darken(color-get($mau,trang), 30%)
-				font-size: .9rem 
-				line-height: 1.2rem 
-			.social-list
-				margin: 2rem 
-				.list-inline
-					margin: 0
-					.list-inline-item
-						font-size: .9rem 
-						margin-right: .5rem 
-						a
-							display: flex
-							height: 2rem
-							width: 2rem
-							border: 2px solid darken(color-get($mau,trang), 30%)
-							color: darken(color-get($mau,trang), 30%)
-							align-items: center 
-							justify-content: center 
-							text-decoration: none
-						&:last-child
-							margin-right: 0
-						&:hover 
-							a 
-								background: rgba(255,255,255,.13)
-								color: lighten(color-get($mau,trang), 0%) 
-								border-color: lighten(color-get($mau,trang), 0%) 
+			color: lighten(color-get($mau,text-1), 0%) 
+		p
+			margin: 0
+			padding: .5rem 0
+			font-size: .95rem
+			color: darken(color-get($mau,text-2), 0%)
+		.info
+			display: flex
+			flex-direction: column
+			align-items: center
+			p
+				+pad(0)
+				color: color-get($mau,main)
+				display: flex
+				align-items: center
+				em
+					+fz(1.3rem)
+					color: color-get($mau,text-2)
+			+media-breakpoint-up(md)
+				align-items: flex-start
+		.social
+			margin-top: 2rem
+			a
+				margin-top: 1rem
+				+pad(.5rem)
+				+bor-rad(50%)
+				background: color-get($mau,main)
+				color: color-get($mau,trang)
+				+ a
+					margin-left: .5rem
+				em
+					width: 20px
+					height: 20px
+					text-align: center
+				&:hover
+					background: color-get($mau,extra)
+		.phone
+			justify-content: center
+			margin-right: 1.5rem
+			+fw(bold)
+			+fz(1.5rem)
+			display: flex
+			color: color-get($mau,den)
+			&:before
+				content: ''
+				width: 25px
+				align-self: center
+				margin-right: .5rem
+				display: inline-block
+				height: 25px
+				background: url('../img/antuong/phone.png') no-repeat
+			+media-breakpoint-up(md)
+				justify-content: initial
 		.list-group
 			.list-group-item
 				display: inline-block
@@ -53,29 +81,25 @@
 				border: 0
 				padding: .5rem 0
 				a
-					font-size: .9rem
-					color: darken(color-get($mau,trang), 30%) 
+					font-size: .95rem
+					color: darken(color-get($mau,text-2), 0%) 
 					&:hover 
 						text-decoration: underline
-						color: lighten(color-get($mau,trang), 0%) 
+						color: lighten(color-get($mau,main), 0%) 
 	.copy-right
-		font-size: .8rem 
-		padding: .75rem 1rem
-		background: darken(color-get($mau,trang), 90%)
-		color: darken(color-get($mau,trang), 20%)
-	// Khi lên Tablet 
-	+media-breakpoint-up(md)
-		.footer-content
-			padding: 4rem 0
-			.list-group
-				.list-group-item
-					padding: .15rem 0
-			.slogan 
-				.social-list
-					margin: 1rem 0 0 0
-	// Khi lên PC
-	+media-breakpoint-up(lg)
-		.slogan
-			display: flex 
-			.quote
-				padding-left: 1rem 
+		margin-top: 2rem
+		+fz(.9rem)
+		color: color-get($mau,text-4)
+		.link
+			a
+				color: color-get($mau,text-4)
+				&:first-child
+					padding-right: .6rem
+					position: relative
+					&:after
+						content: '|'
+						+pos(abs, 0 0 null null)
+				+ a
+					padding-left: .6rem
+				&:hover
+					color: color-get($mau,main)
