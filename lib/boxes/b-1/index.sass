@@ -4,24 +4,26 @@
 //////////////////////////////////////
 
 .canhcam-boxes-1
-	+pad(2rem 0)
-	+media-breakpoint-up(lg)
-		+pad(4rem 0)
+	+pad(3rem 0)
 	.boxes-details
 		background: color-get($mau,trang)
 		+bor-rad(.35rem)
 		overflow: hidden
 		.item
 			position: relative
-			+pad(3rem)
-			&:after
-				content: ''
-				background: url('../img/antuong/next.png') no-repeat
-				height: 50px
-				width: 30px
-				+pos(abs, 50% 0 null null)
-
+			+pad(1rem)
+			
 			+media-breakpoint-up(lg)
+				+pad(3rem)
+				&:after
+					content: ''
+					background: url('../img/antuong/next.png') no-repeat
+					height: 50px
+					width: 30px
+					+pos(abs, 50% -20px null null)
+				&:last-child
+					&:after
+						display: none
 				p
 					max-width: 80%
 					margin: auto
@@ -40,5 +42,3 @@
 				margin-top: 1rem
 				font-weight: 300
 				color: darken(color-get($mau,trang),50%)
-			&:hover
-				background: darken(color-get($mau,trang),2%)

@@ -30,7 +30,6 @@
 	.advbar
 		+mar(0)
 		+pad(0)
-		
 		li 
 			list-style: none
 			+pad(0.5rem 1rem)
@@ -171,6 +170,7 @@
 				display: flex
 				flex-direction: column
 				.advbar
+					border-bottom: 1px solid color-rgba(darken(color-get($mau,trang),20%),.5)
 					overflow: hidden
 					display: flex
 					+pad(0)
@@ -179,7 +179,6 @@
 					li 
 						padding-right: 0 
 						padding-left: 0
-						padding-bottom: 0
 						+ li 
 							margin-left: .3rem
 						a, .link 
@@ -193,12 +192,10 @@
 							color: lighten(color-get($mau,den),60%)
 		&.fixedheader
 			&.active
-				.topbar
-					height: 0px
-					overflow: hidden
 				.k-responsive-menu
 					.mainnav
 						.advbar
+							border-bottom: 0
 							height: 0px
 							margin-top: 0
 	+media-breakpoint-up(xl)

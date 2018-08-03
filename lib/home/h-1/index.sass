@@ -1,0 +1,35 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+	
+section.canhcam-home-1
+	+pad(3rem null 0)
+	.row
+		margin-top: 2rem
+		.about
+			h4
+				+fz(1.2rem)
+				+fw(600)
+				margin-bottom: 1rem
+			p
+				+fw(400)
+				margin-bottom: 0
+		.about-img
+			padding: 1rem
+			border-radius: 50%
+			border: 3px solid color-get($mau,trang)
+			height: 100px
+			width: 100px
+			background: darken(color-get($mau,trang),10%)
+		.img-center
+			width: 100%
+	+media-breakpoint-up(lg)
+		.row
+			margin-top: auto
+			.about-img
+				+mar(0 auto)
+			.img-center
+				width: auto
+		.row-2
+			margin-top: 4rem
