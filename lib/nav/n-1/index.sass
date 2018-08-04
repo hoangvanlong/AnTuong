@@ -28,6 +28,8 @@
 			li
 				+transition(all 0.3s ease-in-out)
 				list-style-type: none
+				position: relative
+				
 				// Anchor
 				a
 					z-index: 1
@@ -40,7 +42,17 @@
 					+fz(1rem)
 					+fw(400)
 					+transition(all 0.3s ease-in-out)
-					// white-space: nowrap
+					&:after
+						content: '|'
+						color: color-get($mau,xam-2)
+						+pos(abs, 12px -3px null null)
+				
 					&.active,&:hover
 						color: color-get($mau,text-1)
 						background: color-get($mau,extra)
+						&:after
+							display: none
+				&:last-child
+					a
+						&:after
+							display: none

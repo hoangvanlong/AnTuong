@@ -1,0 +1,47 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+
+section.canhcam-project_detail-5
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.carousel-1
+		.item
+			justify-content: center
+			display: flex
+			h5
+			cursor: pointer
+			margin-bottom: 0
+	.owl-carousel
+		// Main
+		.owl-stage-outer
+			.click
+				color: color-get($mau,extra)
+		// Nav
+		.owl-nav
+			button
+				&.owl-prev, &.owl-next
+					+pad(.5rem_)
+					width: 3rem
+					height: 3rem
+					background: darken(color-get($mau,trang),5%)
+					+bor-rad(50%)
+					text-align: center
+					&:focus
+						outline: none
+				&:hover, &.active
+					&.owl-prev, &.owl-next
+						background: color-get($mau,main)
+		// Dots
+		.owl-dots
+			.owl-dot
+				&:focus
+					outline: none
+				span
+					background: darken(color-get($mau,trang),5%)
+				&.active
+					span
+						background: color-get($mau,main)

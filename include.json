@@ -44,7 +44,15 @@
         "project-detail": {
             "body": [
                 "breadcrumb/b-1",
-                "pagination/p-1"
+                "project-detail/p-1",
+                "project-detail/p-2",
+                "project-detail/p-3",
+                "project-detail/p-4",
+                "project-detail/p-5",
+                "project-detail/p-6",
+                "project-detail/p-7",
+                "project-detail/p-8",
+                "project-detail/p-9"
             ]
         },
         "sale-detail": {

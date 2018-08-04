@@ -1,0 +1,43 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+section.canhcam-project-detail-3
+	+pad(3rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	color: color-get($mau,trang)
+	.nav-tabs
+		border: 0
+		.nav-item
+			position: relative
+			margin-right: .25rem
+			+media-breakpoint-up(md)
+				&:after
+					content: '|'
+					position: absolute
+					top: 8px
+					right: -4px
+				&:last-child
+					margin-right: 0
+					&:after
+						display: none
+			.nav-link
+				color: color-get($mau,trang)
+				position: relative
+				border: 0
+				+fz(1.2rem)
+				+fw(400)
+				text-transform: uppercase
+				+bor-rad(0)
+				&.active
+					border: 0
+					background: none
+					color: darken(color-get($mau,extra),0%)
+					&:after
+						width: calc(100% - 2px)
+						+pos(abs, null 1px 0 null)
+	.tab-content
+		.tab-pane
+			+pad(1rem)
