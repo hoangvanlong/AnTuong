@@ -4,9 +4,9 @@
 //////////////////////////////////////
 
 .canhcam-pagination-1
-	+pad(2rem 0)
+	+pad(0 0 3rem 0)
 	+media-breakpoint-up(lg)
-		+pad(4rem 0)
+		+pad(0 0 4rem 0)
 	.pagelist
 		.pagination
 			margin-bottom: 0
@@ -15,13 +15,17 @@
 				&:first-child
 					margin-left: 0
 				.page-link
-					+bor-rad(50% 50%)
+					+bor-rad(0)
 					width: 2.5rem
 					height: 2.5rem
 					justify-content: center
 					align-items: center
+					+fw(700)
 					display: flex
-					color: darken(color-get($mau,trang) ,20%)
+					color: darken(color-get($mau,den) ,0%)
+					background: darken(color-get($mau,trang),10%)
 				&.active
 					.page-link
 						color: darken(color-get($mau,trang) ,0%)
+						background: color-get($mau,extra)
+						border: 0

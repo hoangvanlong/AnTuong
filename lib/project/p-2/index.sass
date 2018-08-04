@@ -1,0 +1,55 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+section.canhcam-project-2
+	+pad(3rem null 2rem)
+	+media-breakpoint-up(lg)
+		+pad(3rem null)
+	a.item
+		text-decoration: none
+		+fw(400)
+		figure
+			figcaption
+				+pad(1rem)
+				+bor(null, solid darken(color-get($mau,trang),20%),1px)
+				h5
+					+fw(700)
+					+fz(1.2rem)
+					color: color-get($mau,main)
+					margin-bottom: 1rem
+				p
+					color: color-get($mau,text-2)
+					margin-bottom: .5rem
+					span
+						+fw(500)
+						color: color-get($mau,extra)
+			.status
+				justify-content: space-between
+				+pad(1rem)
+				+bor(null, solid darken(color-get($mau,trang),20%),1px)
+				border-top: 0
+				p
+					margin-bottom: 0
+					color: color-get($mau,text-2)
+				span
+					color: color-get($mau,main)
+					+fw(500)
+			&:hover
+				box-shadow: 0 0 5px color-rgba(color-get($mau,den),.5)
+				figcaption
+					h5
+						color: color-get($mau,main)
+				.status
+					span
+						color: color-get($mau,main)
+	+media-breakpoint-up(lg)
+		a.item
+			figure
+				figcaption
+					h5
+						color: color-get($mau,den)
+				.status
+					span
+						color: color-get($mau,text-3)

@@ -1,13 +1,15 @@
 section.canhcam-project-1
 	.container
-		h1.antuong-title Dự án
-		.select
-			select.sl-city
-				option Tỉnh/ Thành phố
-				option Đồng Nai
-				option Sài Gòn
-			select.sl-district
-				option Quận/ huyện
-				option Quận 1
-				option Quận 2
-			a.btn.btn-search(href='#') Tìm Ngay
+		h1.antuong-title.mb-5.upcase Dự án
+		.select.d-lg-flex
+			.sl-city(data-mh="select")
+				select
+					option Tỉnh/ Thành phố
+					option Đồng Nai
+					option Sài Gòn
+			.sl-district.mt-3.mt-lg-0.ml-lg-4(data-mh="select")
+				select
+					option Quận/ huyện
+					option Quận 1
+					option Quận 2
+			a.btn.btn-search.mt-3.mt-lg-0.ml-lg-4(href='#' data-mh="select") Tìm Ngay
