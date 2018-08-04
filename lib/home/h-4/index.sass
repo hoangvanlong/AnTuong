@@ -3,23 +3,20 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-boxes-3
-	+pad(2rem 0)
-	+media-breakpoint-up(lg)
-		+pad(4rem 0)
+.canhcam-home-4
+	+pad(3rem 0)
 	.number
 		.item
 			min-height: 180px
-			padding: 2rem 0
 		.content
 			align-items: center
 			.count
 				display: flex
 				align-items: center
+				margin: auto
 				justify-content: center
-				+pad(2rem)
-				height: 150px
-				width: 150px
+				height: 180px
+				width: 180px
 				+bor-rad(50%)
 				background: color-get($mau,extra)
 				h5
@@ -29,3 +26,12 @@
 				span
 					+fz(2.5rem)
 					+fw(700)
+			.text
+				p
+					margin-top: 1rem
+					margin-bottom: 0
+		+media-breakpoint-up(lg)
+			.content
+				.text
+					margin-left: 3rem
+					max-width: 150px

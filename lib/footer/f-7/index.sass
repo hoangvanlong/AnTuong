@@ -6,7 +6,7 @@
 .canhcam-footer-7
 	background: darken(color-get($mau,trang), 5%)
 	position: relative
-	+pad(2rem null)
+	+pad(2rem null 0)
 	&:before
 		content: ''
 		height: 3px
@@ -16,6 +16,7 @@
 		background-position: center center
 		background-size: cover
 	.footer-content
+		padding-bottom: 3rem
 		color: lighten(color-get($mau,text-1), 0%)
 		font-weight: 400
 		h6
@@ -87,8 +88,9 @@
 						text-decoration: underline
 						color: lighten(color-get($mau,main), 0%) 
 	.copy-right
-		margin-top: 2rem
 		+fz(.9rem)
+		+pad(1rem null)
+		border-top: 1px solid darken(color-get($mau,trang),20%)
 		color: color-get($mau,text-4)
 		.link
 			a

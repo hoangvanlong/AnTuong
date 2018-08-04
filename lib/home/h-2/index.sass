@@ -81,11 +81,11 @@
 				+pad(.5rem 3rem)
 				background: color-get($mau,main)
 				color: color-get($mau,trang)
-				+bor(null,solid color-get($mau,main),3px)
 				+fz(1.3rem)
+				+bor-rad(5px)
 				+fw(600)
 				&:hover
-					background: none
+					background: color-get($mau,trang)
 					color: color-get($mau,main)
 		+media-breakpoint-up(md)
 			flex-direction: row
