@@ -1,0 +1,30 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+	
+section.canhcam-project-1
+	+pad(3rem null null null)
+	+media-breakpoint-up(lg)
+		+pad(4rem null null null)
+	.select
+		display: flex
+		+pad(1.5rem 2rem)
+		background: color-get($mau,main)
+		position: relative
+		select
+			width: 250px
+			+pad(.5rem 1rem)
+			+bor-rad(5px)
+			background: none
+			color: color-rgba(color-get($mau,trang),.8)
+			+bor(null, solid color-rgba(color-get($mau,trang),.8),1px)
+			&:focus
+				+bor(null, solid color-get($mau,trang),1px)
+				color: color-rgba(color-get($mau,trang),1)
+				box-shadow: 0
+				+fw(600)
+			option
+				color: color-get($mau,text-1)
+			&.sl-district
+				margin-left: 1rem

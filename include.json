@@ -36,6 +36,8 @@
         },
         "product": {
             "body": [
+                "project/p-1",
+                "project/p-2",
                 "pagination/p-1"
             ]
         },
