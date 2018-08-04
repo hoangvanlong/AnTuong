@@ -215,9 +215,15 @@ header
 .antuong-title
 	+fz(2rem)
 	text-align: center
-	+fw(700)
+	+fw(600)
 	+media-breakpoint-up(lg)
-		+fz(2.5rem)
+		+fz(2.2rem)
+	&.white
+		color: color-get($mau,trang)
+	&.upcase
+		text-transform: uppercase
+	&.left
+		text-align: left
 a.btn-more
 	+pad(.5rem 2.5rem)
 	+bor-rad(5px)

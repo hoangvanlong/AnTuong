@@ -23,8 +23,10 @@
                 "header/h-14"
             ],
             "body": [
-                "boxes/b-1",
-                "boxes/b-2"
+                "about/a-1",
+                "about/a-2",
+                "about/a-3",
+                "about/a-4"
             ],
             "footer": [
                 "footer/f-1",

@@ -1,0 +1,33 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+section.canhcam-about-2
+	+pad(3rem null)
+	+media-breakpoint-up(lg)
+		+pad(4rem null)
+	.item
+		text-decoration: none
+		figure
+			margin-bottom: 0
+			.boxzoom
+				overflow: hidden
+			figcaption
+				+pad(1rem null)
+				
+				h5
+					+fz(1.2rem)
+					+fw(600)
+					margin-bottom: 1rem
+					color: color-get($mau,trang)
+					text-transform: uppercase
+				.content
+					margin-left: -20px
+					+fw(300)
+					color: color-rgba(color-get($mau,trang),.6)
+		&:hover
+			.boxzoom
+				img
+					transform: scale(1.1)
+					transition: .3s ease-in-out

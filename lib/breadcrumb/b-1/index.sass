@@ -11,6 +11,8 @@
 		left: 0
 		width: 100%
 		display: none
+		+pad(.5rem null)
+		background: color-rgba(color-get($mau,den),.4)
 		z-index: 100
 		+media-breakpoint-up(md)
 			display: block
@@ -20,16 +22,9 @@
 			+pad(0)
 			position: relative
 			background: none
-			+opacity(.8)
-			&:before
-				content: ''
-				display: block
-				min-width: 1000px
-				height: 2.5rem
-				background: color-get($mau,main)
-				+pos(abs, 0 100% null null)
 			.breadcrumb-item
-				background: color-get($mau,main)
+				em
+					+fz(1.5rem)
 				+pad(.5rem)
 				position: relative
 				line-height: 1.5rem
@@ -38,7 +33,9 @@
 				align-items: center
 				&:first-child
 					padding-left: 0
-				a
+				a, &.active
+					+fw(300)
+					+fz(1.2rem)
 					color: color-get($mau,trang)
 				+ .breadcrumb-item
 					&:before
@@ -47,15 +44,6 @@
 						font-family: 'Linearicons-Free'
 						line-height: 1
 						overflow: hidden
-				&:last-child
-					&:after
-						content: ''
-						display: inline-block
-						width: 0
-						height: 0
-						border-bottom: 2.5rem solid color-get($mau,main)
-						border-right: 2.5rem solid transparent
-						+pos(abs, 0 -2.5rem null null)
 	.owl-carousel
 		position: relative
 
@@ -66,10 +54,8 @@
 				min-height: 280px
 				+media-breakpoint-up(sm)
 					min-height: 320px
-				+media-breakpoint-up(md)
-					min-height: 380px
 				+media-breakpoint-up(lg)
-					min-height: 480px
+					min-height: 360px
 				.title
 					+pos(abs, null null 3rem 0)
 					text-align: center
