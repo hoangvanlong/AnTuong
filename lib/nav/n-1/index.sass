@@ -42,10 +42,11 @@
 					+fz(1rem)
 					+fw(400)
 					+transition(all 0.3s ease-in-out)
-					&:after
-						content: '|'
-						color: color-get($mau,xam-2)
-						+pos(abs, 12px -3px null null)
+					+media-breakpoint-up(lg)
+						&:after
+							content: '|'
+							color: color-get($mau,xam-2)
+							+pos(abs, 12px -3px null null)
 				
 					&.active,&:hover
 						color: color-get($mau,text-1)

@@ -3,7 +3,7 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-pagination-1
+.canhcam-pagination-1, .support-page
 	+pad(0 0 3rem 0)
 	+media-breakpoint-up(lg)
 		+pad(0 0 4rem 0)
@@ -16,8 +16,8 @@
 					margin-left: 0
 				.page-link
 					+bor-rad(0)
-					width: 2.5rem
-					height: 2.5rem
+					width: 2.8rem
+					height: 2.8rem
 					justify-content: center
 					align-items: center
 					+fw(700)
@@ -26,6 +26,5 @@
 					background: darken(color-get($mau,trang),10%)
 				&.active
 					.page-link
-						color: darken(color-get($mau,trang) ,0%)
 						background: color-get($mau,extra)
 						border: 0

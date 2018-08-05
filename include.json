@@ -71,6 +71,12 @@
                 "sale/s-2"
             ]
         },
+        "support": {
+            "body": [
+                "nav/n-5",
+                "support/s-1"
+            ]
+        },
         "sale-detail": {
             "body": [
                 "sale-detail/s-1",

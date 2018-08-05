@@ -40,11 +40,12 @@
 				text-decoration: none
 				em 
 					+fz(1rem)
-					+pad(.5rem)
+					+pad(1rem null)
 					height: 100%
-					width: 30px
+					width: 40px
+					height: 40px
 					text-align: center
-					background: darken(color-get($mau,trang),10%)
+					background: color-get($mau,trang)
 				.textinfo
 				&.phone
 					margin-right: 1.5rem
@@ -76,7 +77,7 @@
 				a
 					+pad(.4rem 2rem .3rem 2rem)
 					&.register, &.login
-						background: darken(color-get($mau,trang),10%)
+						background: darken(color-get($mau,trang),0%)
 						color: color-get($mau,den)
 					&.login
 						margin-left: 1rem
@@ -112,7 +113,7 @@
 		.nav
 			.nav-item
 				.nav-link
-					+fw(700)
+					+fw(600)
 					height: 100%
 					color: lighten(color-get($mau,trang),0%)
 					&.home
@@ -183,6 +184,11 @@
 						+ li 
 							margin-left: .3rem
 						a, .link 
+							em
+								height: 30px
+								background: darken(color-get($mau,trang),10%)
+								+pad(.5rem)
+								width: 30px
 					.input-group
 						height: 52px
 						border: 1px solid lighten(color-get($mau,den),60%)
