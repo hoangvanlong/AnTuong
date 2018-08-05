@@ -56,6 +56,14 @@
                 "project-detail/p-9"
             ]
         },
+        "sale": {
+            "body": [
+                "nav/n-3",
+                "breadcrumb/b-1",
+                "sale/s-1",
+                "sale/s-2"
+            ]
+        },
         "sale-detail": {
             "body": [
                 "tabs/t-2"
