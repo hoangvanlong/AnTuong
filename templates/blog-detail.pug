@@ -1,8 +1,16 @@
 extends _layout/layout.pug
 block variables
-	- var title = "blog-detail"
-	- var description = "Description for blog-detail page"
-	- var bodyclass = "blog-detail"
-	- var href = "/blog-detail.html"
+	- var title = "blog"
+	- var description = "Description for blog page"
+	- var bodyclass = "blog"
+	- var href = "/blog.html"
+block header
+	include ../lib/header/h-14/index.pug
 block body
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/nav/n-4/index.pug
 	include ../lib/news-details/n-1/index.pug
+	include ../lib/bonus/b-1/index.pug
+block footer
+	include ../lib/footer/f-1/index.pug
+	include ../lib/footer/f-7/index.pug
