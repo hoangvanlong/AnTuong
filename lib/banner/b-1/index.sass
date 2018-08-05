@@ -9,33 +9,31 @@
 		margin-bottom: 0
 		.slick-track
 			.item
+				display: flex
+				align-items: center
 				position: relative
 				&:focus
 					outline: none 
-				min-height: 280px
-				+media-breakpoint-up(sm)
-					min-height: 320px
-				+media-breakpoint-up(md)
-					min-height: 360px
-				+media-breakpoint-up(lg)
-					min-height: 380px
-				.title
-					+pos(abs, null null 3rem 0)
-					text-align: center
-					width: 100%
-					+pad(0 1rem)
-					h1
-						color: color-get($mau,trang)
-						+text-sha(1px 1px 3px rgba(0,0,0,.4))
-					p
-						color: color-get($mau,trang)
-						+text-sha(2px 2px 3px rgba(0,0,0,.2))
+				min-height: 450px
+				.img-content
+				.content
+					color: color-get($mau,trang)
+					h3
 						+fz(1.5rem)
-						+lh(1.8rem)
-						+fw(400)
-						+media-breakpoint-up(md)
-							max-width: 50%
-							margin: 0 auto 1rem auto
+						+fw(600)
+						margin-bottom: 1rem
+						text-transform: uppercase
+					p
+						+fw(300)
+						+fz(1rem)
+						margin-bottom: 0
+				+media-breakpoint-up(lg)
+					min-height: 480px
+					.content
+						h3
+							+fz(2.2rem)
+						p
+							+fz(1.3rem)
 		// Arrow
 		.slick-arrow
 			background: rgba(0,0,0,.3)
@@ -67,22 +65,22 @@
 			+pos(abs, null null 2rem 0)
 			width: 100%
 			li
-				width: 2.14rem
-				height: .36rem
+				width: 2.2em
+				height: .2rem
 				+mar(.5rem)
 				&:focus
 					outline: none
 				button
 					+pad(0)
-					width: 2.5rem
-					height: .3rem
-					+bor-rad(25px)
+					width: 2.2rem
+					height: .2rem
+					+bor-rad(0)
 					background: color-get($mau,trang)
 					&:before
 						content: ''
-						+bor-rad(25px)
-						width: 2.14rem
-						height: .36rem
+						+bor-rad(0)
+						width: 2.2rem
+						height: .2rem
 					+ button
 						margin-left: 1rem
 				&.slick-active

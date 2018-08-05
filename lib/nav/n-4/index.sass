@@ -1,0 +1,59 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+
+
+.canhcam-nav-4
+	position: sticky
+	position: -webkit-sticky
+	top: 63px
+	border-bottom: 1px solid darken(color-get($mau,trang),20%)
+	+media-breakpoint-up(lg)
+		top: 50px
+	width: 100%
+	z-index: 99
+	background: color-get($mau,trang)
+	.nav-list
+		ul
+			margin-bottom: 0
+			display: flex
+			flex-direction: row
+			justify-content: center
+			flex-wrap: wrap
+			padding: 0
+			margin: 0
+			// overflow-x: auto
+			li
+				+transition(all 0.3s ease-in-out)
+				list-style-type: none
+				position: relative
+				
+				// Anchor
+				a
+					z-index: 1
+					display: block
+					box-sizing: border-box
+					+pad(.6rem 3rem)
+					color: darken(color-get($mau,trang),50%)
+					text-decoration: none
+					position: relative
+					+fz(1.1rem)
+					+fw(400)
+					+transition(all 0.3s ease-in-out)
+					&:after
+						content: '|'
+						color: color-get($mau,xam-2)
+						+pos(abs, 12px -3px null null)
+				
+					&.active,&:hover
+						color: color-get($mau,text-1)
+						background: color-get($mau,extra)
+						+fw(600)
+						&:after
+							display: none
+				&:last-child
+					a
+						&:after
+							display: none
