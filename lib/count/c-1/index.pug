@@ -1,0 +1,80 @@
+section.canhcam-count-1
+	article.count-list
+		.container
+			h1.antuong-title.upcase.mb-4.mb-lg-5 vay ngân hàng
+			.row
+				.col-lg-4
+					.form
+						h2.title.mb-4 thông tin vay
+						table.table.table-input
+							tbody
+								tr
+									th(scope='row') Số tiền vay (VNĐ)
+									td
+										input.form-control(type="number", name="")
+								tr
+									th(scope='row') Lãi suất %/năm
+									td
+										input.form-control(type="number", name="")
+								tr
+									th(scope='row') Thời gian vay tháng
+									td
+										input.form-control(type="number", name="")
+								tr.submit-value
+									th(scope='row')
+									td
+										button.btn.btn-primary(type="submit")
+											| Tính toán
+											em.mdi.mdi-chevron-right
+				.col-lg-8
+					.table-result
+						p Phân bổ các khoản vay theo phương pháp Gộp cố định tháng
+						table.table
+							thead
+								tr
+									th(scope="col") Tháng
+									th(scope="col") Số tiền trả hàng tháng
+									th(scope="col") Vốn
+									th(scope="col") Lãi
+									th(scope="col") Nợ gốc còn lại
+							tbody
+								tr
+									th(scope="row") 1
+									td 28.513.261
+									td 28.513.261
+									td 28.513.261
+									td 28.513.261
+								tr
+									th(scope="row") 2
+									td 28.513.261
+									td 28.513.261
+									td 28.513.261
+									td 28.513.261
+								tr
+									th(scope="row") 3
+									td 28.513.261
+									td 28.513.261
+									td 28.513.261
+									td 28.513.261
+								tr
+									th(scope="row") 4
+									td 28.513.261
+									td 28.513.261
+									td 28.513.261
+									td 28.513.261
+								tr
+									th(scope="row") 5
+									td 28.513.261
+									td 28.513.261
+									td 28.513.261
+									td 28.513.261
+								tr.result-num
+									th(scope="row") Tổng Cộng
+									td 28.513.261
+									td 28.513.261
+									td 28.513.261
+									td
+						.print-button
+							button.btn.btn-primary(type="submit")
+								em.mdi.mdi-printer
+								| In

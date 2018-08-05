@@ -77,6 +77,11 @@
                 "support/s-1"
             ]
         },
+        "count": {
+            "body": [
+                "count/c-1"
+            ]
+        },
         "sale-detail": {
             "body": [
                 "sale-detail/s-1",

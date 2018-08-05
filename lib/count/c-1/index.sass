@@ -1,0 +1,166 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+
+
+.canhcam-count-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.Module-283
+		width: 100%
+	.count-list
+		.form
+			.title
+				+fz(1.5rem)
+				color: color-get($mau,trang)
+				+fw(600)
+				text-transform: uppercase
+
+			+pad(1.5rem)
+			background: color-get($mau , main)
+			.table-input
+				margin-bottom: 0
+				display: block
+				th
+					padding-left: 0
+					color: color-get($mau , trang)
+					+fz(1rem)
+					+fw(400)
+					+media-breakpoint-up(md)
+						white-space: nowrap
+				th,td
+					border: none
+				.submit-value
+					button
+						width: 100%
+						color: color-get($mau , text-1)
+						+fz(1.3rem)
+						+fw(500)
+						display: flex
+						align-items: center
+						justify-content: center
+						background: color-get($mau ,extra)
+						border: none
+						.mdi
+							+fz(1.7rem)
+							margin-left: .5rem
+	.table-result
+		background: darken(color-get($mau,trang),3%)
+		+pad(1rem)
+		.result-bold
+			&:last-child
+				td
+					+fw(700)
+		p
+			+fz(1.29rem)
+			color: color-get($mau , text-1)
+		.table
+			border: 1px solid color-get($mau , tab-2)
+			+media-breakpoint-down(sm)
+				display: block
+				width: 100%
+				overflow-x: auto
+				-webkit-overflow-scrolling: touch
+				-ms-overflow-style: -ms-autohiding-scrollbar
+		thead
+			tr
+				th
+					border-right: 1px solid color-get($mau , tab-3)
+					&:last-child
+						border: none
+		tbody
+			tr
+				th,td
+					border-right: 1px solid color-get($mau , tab-3)
+				td
+					&:last-child
+						border: none
+		th,td
+			+fz(1.07rem)
+			+fw(400)
+			text-align: center
+			border: none
+		tbody
+			tr
+				&:nth-child(even)
+					background: #ebf3fa
+				&:nth-child(odd)
+					background: color-get($mau,trang)
+		thead
+			background: color-get($mau,main)
+			color: color-get($mau,trang)
+		.result-num
+			background: color-get($mau,trang)!important
+			th,td
+				+fw(700)
+		.print-button
+			display: flex
+			justify-content: flex-end
+			margin-bottom: 1rem
+			button
+				background: color-get($mau , main)
+				text-transform: uppercase
+				color: color-get($mau , trang)
+				display: flex
+				align-items: center
+				+pad(.5rem 2rem)
+				.mdi
+					margin-right: .5rem
+	.wrap-calculate
+		+pad(1rem)
+		background: color-get($mau , main)
+		height: 256px
+		.RadSlider
+			display: none
+		.frm-row
+			display: flex
+			justify-content: space-between
+			margin-bottom: .5rem
+			&:last-child
+				margin-bottom: 0
+			label
+				color: color-get($mau , trang)
+			input[type="text"]
+				display: block
+				width: 100%
+				padding: .375rem .75rem
+				font-size: 1rem
+				line-height: 1.5
+				color: color-get($mau , den-3)
+				background-color: #ffffff
+				background-clip: padding-box
+				// border: 1px solid #ced4da
+				border-radius: .25rem
+				transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+			.frm-btn
+				width: 100%
+				display: flex
+				justify-content: flex-end
+				margin-top: 1rem
+				position: relative
+				input[type="submit"]
+					+pad(.8rem 2rem)
+					+bor-rad(2px)
+					color: #ffffff
+					font-size: 1rem
+					font-weight: 700
+					display: flex
+					align-items: center
+					justify-content: center
+					background: color-get($mau , cam-3)
+					border: none
+					text-transform: uppercase
+					padding-right: 50px
+					max-width: 160px
+				.fa-chevron-right
+					+pos(abs, 0 25px null null)
+					+lh(43.38px)
+					color: #ffffff
+	.cal-result
+		+pad(1rem)
+		.cal-heading
+			+fz(1.29rem)
+			color: color-get($mau , den-3)
