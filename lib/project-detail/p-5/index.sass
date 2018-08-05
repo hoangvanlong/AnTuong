@@ -5,36 +5,72 @@
 
 
 section.canhcam-project_detail-5
-	+pad(2rem 0)
+	+pad(3rem 0)
+	background: darken(color-get($mau,trang),3%)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
+	.slidemonth
 	.carousel-1
 		.item
+			position: relative
 			justify-content: center
 			display: flex
 			h5
-			cursor: pointer
-			margin-bottom: 0
-	.owl-carousel
-		// Main
-		.owl-stage-outer
-			.click
+				cursor: pointer
+				margin-bottom: 0
+			&.click
 				color: color-get($mau,extra)
+				&:after
+					color: color-get($mau,text-1)
 		// Nav
+		
 		.owl-nav
 			button
 				&.owl-prev, &.owl-next
 					+pad(.5rem_)
 					width: 3rem
 					height: 3rem
-					background: darken(color-get($mau,trang),5%)
 					+bor-rad(50%)
 					text-align: center
+					color: color-get($mau,trang)
+					background: color-get($mau,main)
 					&:focus
 						outline: none
-				&:hover, &.active
+				+media-breakpoint-up(lg)
 					&.owl-prev, &.owl-next
-						background: color-get($mau,main)
+						color: color-get($mau,den)
+						background: transparent
+						+transform(translate(-50%,-50%))
+						&.owl-prev
+							+pos(abs,6px null null 0px)
+						&.owl-next
+							+pos(abs,6px -40px null null)
+	.carousel-2
+		// Nav
+		
+		.owl-nav
+			button
+				&.owl-prev, &.owl-next
+					+pad(.5rem_)
+					width: 3rem
+					height: 3rem
+					+bor-rad(50%)
+					text-align: center
+					color: color-get($mau,trang)
+					background: color-get($mau,main)
+					&:focus
+						outline: none
+				+media-breakpoint-up(lg)
+					&.owl-prev, &.owl-next
+						+fz(2.5rem)
+						width: auto
+						height: auto
+						background: transparent
+						+transform(translate(-50%,-50%))
+						&.owl-prev
+							+pos(abs,50% null null 2rem)
+						&.owl-next
+							+pos(abs,50% -1rem null null)
 		// Dots
 		.owl-dots
 			.owl-dot

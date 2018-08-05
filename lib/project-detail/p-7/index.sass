@@ -1,0 +1,82 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-project-detail-7
+	+pad(3rem null)
+	+media-breakpoint-up(lg)
+		+pad(4rem null)
+	.mt-lg-30p
+		+media-breakpoint-up(lg)
+			margin-top: 30px!important
+	.img-gallery
+		.item
+			margin-top: 1rem
+			figure
+				overflow: hidden
+				margin-bottom: 0
+				&:hover
+					img
+						transform: scale(1.1)
+						transition: .3s ease-in-out
+			+media-breakpoint-up(lg)
+				margin-top: 0
+	.vid-gallery
+		padding-top: 2rem
+		.item
+			display: flex
+			text-decoration: none
+			height: 100%
+			// +bor-rad(5px)
+			overflow: hidden
+			figure
+				overflow: hidden
+				// +bor-rad(5px)
+				margin-bottom: 0
+				.boxzoom
+					overflow: hidden
+					position: relative
+					// +bor-rad(5px)
+					&:after
+						content: ''
+						display: block
+						z-index: 1
+						background: rgba(0,0,0,.5)
+						width: 100%
+						height: 100%
+						+pos(abs, 0 0 null null)
+					// +media-breakpoint-up(sm)
+					// 	max-height: 200px
+					// 	min-height: 200px
+					.zoom-item
+						color: color-get($mau,trang)
+						+pos(abs, 50% null null 50%)
+						+transform(translateX(-50%) translateY(-50%))
+						z-index: 10
+						+fz(7rem)
+						+transition(all .2s ease-in-out)
+						.mdi-play-circle-outline
+							display: block
+						.mdi-play-circle
+							display: none
+					img
+						// +bor-rad(5px 5px 0 0)
+						// +transition(all .5s ease-in-out)
+						width: 100%
+				figcaption
+					padding: 1rem 0 0 0
+
+					h3
+						+fz(1.1rem)
+						+fw(400)
+						color: color-get($mau,den)
+						margin-bottom: 0
+			&:hover
+				figure
+					.boxzoom
+						&:after
+							z-index: -1
+						img
+		+media-breakpoint-up(lg)
+			padding-top: 5rem

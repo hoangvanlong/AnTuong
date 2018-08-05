@@ -43,6 +43,7 @@
         },
         "project-detail": {
             "body": [
+                "nav/n-2",
                 "breadcrumb/b-1",
                 "project-detail/p-1",
                 "project-detail/p-2",

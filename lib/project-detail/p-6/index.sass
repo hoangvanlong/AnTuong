@@ -3,39 +3,17 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-tabs-2
-	+pad(2rem 0)
+section.canhcam-project-detail-6
+	+pad(3rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
-	.nav-tabs
-		border-color: darken(color-get($mau,main),0%)
-		.nav-item
-			margin-right: .25rem
-			&:last-child
-				margin-right: 0
-			.nav-link
-				position: relative
-				border: 0
-				background: darken(color-get($mau,trang),3%)
-				color: darken(color-get($mau,trang),75%)
-				+bor-rad(0)
-				&:after
-					content: ''
-					height: 1px
-					width: 100%
-					display: block
-					+pos(abs, null 0 0 null)
-					background: darken(color-get($mau,main),0%)
-				&.active
-					background: darken(color-get($mau,trang),0%)
-					color: darken(color-get($mau,main),0%)
-					box-shadow: inset 1px 0 0 0 color-get($mau,main), inset -1px 0 0 0 color-get($mau,main), inset 0 1px 0 0 color-get($mau,main)
-					&:after
-						width: calc(100% - 2px)
-						+pos(abs, null 1px 0 null)
-						background: darken(color-get($mau,trang),0%)
-	.tab-content
-		border: 1px solid darken(color-get($mau,main),0%)
-		border-top: 0
-		.tab-pane
-			+pad(1rem)
+	.content
+		+lh(1.9rem)
+		+fw(400)
+		color: color-get($mau,text-2)
+		p, h5
+			margin-bottom: 1.2rem
+		h5
+			+fz(1.2rem)
+			+fw(600)
+			text-transform: uppercase
