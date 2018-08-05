@@ -1,0 +1,48 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+section.canhcam-blog-1
+	+pad(4rem null 3rem)
+	a.item
+		text-decoration: none
+		+fw(400)
+		figure
+			figcaption
+				+pad(1rem)
+				border-bottom: 2px solid color-get($mau,extra)
+				.time
+					+fz(.9rem)
+					margin-bottom: 1rem
+					color: color-get($mau,text-3)
+				h5
+					+fw(700)
+					+fz(1.2rem)
+					color: color-get($mau,main)
+					margin-bottom: 1rem
+				p
+					color: color-get($mau,text-2)
+					margin-bottom: .5rem
+					span
+						+fw(500)
+						color: color-get($mau,extra)
+			&:hover
+				box-shadow: 0 0 5px color-rgba(color-get($mau,den),.5)
+				figcaption
+					h5
+						color: color-get($mau,main)
+				.status
+					span
+						color: color-get($mau,main)
+	+media-breakpoint-up(lg)
+		a.item
+			figure
+				figcaption
+					+pad(2rem)
+					h5
+						+fz(1.3rem)
+						color: color-get($mau,den)
+				.status
+					span
+						color: color-get($mau,text-3)

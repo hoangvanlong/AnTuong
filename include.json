@@ -56,6 +56,13 @@
                 "project-detail/p-9"
             ]
         },
+        "blog": {
+            "body": [
+                "nav/n-4",
+                "breadcrumb/b-1",
+                "blog/b-1"
+            ]
+        },
         "sale": {
             "body": [
                 "nav/n-3",
