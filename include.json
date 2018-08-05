@@ -66,6 +66,8 @@
         },
         "sale-detail": {
             "body": [
+                "sale-detail/s-1",
+                "sale-detail/s-2",
                 "tabs/t-2"
             ]
         },

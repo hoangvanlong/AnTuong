@@ -1,0 +1,71 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+	
+	
+section.canhcam-sale-detail-1
+	+pad(3rem null 1rem)
+	+media-breakpoint-up(lg)
+		+pad(4rem null 1rem)
+	.owl-nav
+		button
+			&.owl-prev, &.owl-next
+				+pad(.5rem_)
+				width: 3rem
+				height: 3rem
+				background: darken(color-get($mau,trang),5%)
+				+bor-rad(50%)
+				text-align: center
+				&:focus
+					outline: none
+			&:hover, &.active
+				&.owl-prev, &.owl-next
+					background: color-get($mau,main)
+		+media-breakpoint-up(md)
+			margin-top: 0
+			button
+				&.owl-prev, &.owl-next
+					+fz(2rem)
+					color: color-get($mau,trang)
+					width: auto
+					height: auto
+					background: none
+					margin: 0
+					+transform(translateY(-50%))
+					&:focus
+						outline: none
+				&.owl-prev
+					+pos(abs, 50% null null 1rem)
+				&.owl-next
+					+pos(abs, 50% 1rem null null)
+					&:hover
+						background: none
+
+	.item
+		position: relative
+	table
+		color: color-get($mau,text-2)
+		tr
+			border-bottom: 1px dashed color-get($mau,text-3)
+			vertical-align: top
+			&:last-child
+				border-bottom: 0
+			td
+				+pad(.6rem null)
+				span
+					+fz(1.2rem)
+					+fw(700)
+					color: color-get($mau,extra)
+				a.btn-contact
+					+pad(.5rem 2rem)
+					+bor(null, solid color-get($mau,main),2px)
+					background: color-get($mau,main)
+					color: color-get($mau,trang)
+					+bor-rad(0)
+					&:hover
+						background: none
+						color: color-get($mau,main)
+
+			.detail
+				width: 45%

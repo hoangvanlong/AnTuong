@@ -4,38 +4,59 @@
 //////////////////////////////////////
 
 .canhcam-tabs-2
-	+pad(3rem 0)
-	+media-breakpoint-up(lg)
-		+pad(4rem 0)
+	+pad(1rem null 3rem)
 	.nav-tabs
-		border-color: darken(color-get($mau,main),0%)
+		justify-content: center
+		border: 0
+		margin-bottom: 1rem
 		.nav-item
-			margin-right: .25rem
-			&:last-child
-				margin-right: 0
+			border-bottom: 0
+			margin-top: 1rem
+	
 			.nav-link
 				position: relative
+				margin-bottom: 1px
+				+pad(.5rem 3rem)
 				border: 0
+				+fz(1.1rem)
 				background: darken(color-get($mau,trang),3%)
-				color: darken(color-get($mau,trang),75%)
+				color: darken(color-get($mau,text-1),0%)
 				+bor-rad(0)
-				&:after
-					content: ''
-					height: 1px
-					width: 100%
-					display: block
-					+pos(abs, null 0 0 null)
-					background: darken(color-get($mau,main),0%)
 				&.active
-					background: darken(color-get($mau,trang),0%)
-					color: darken(color-get($mau,main),0%)
-					box-shadow: inset 1px 0 0 0 color-get($mau,main), inset -1px 0 0 0 color-get($mau,main), inset 0 1px 0 0 color-get($mau,main)
-					&:after
-						width: calc(100% - 2px)
-						+pos(abs, null 1px 0 null)
-						background: darken(color-get($mau,trang),0%)
+					background: darken(color-get($mau,extra),0%)
+					color: darken(color-get($mau,text-1),0%)
+	+media-breakpoint-up(md)
+		.nav-tabs
+			justify-content: flex-start
+			margin-bottom: 0
+			.nav-item
+				margin-top: 0
+				margin-right: 1rem
+				&:last-child
+					margin-right: 0
 	.tab-content
-		border: 1px solid darken(color-get($mau,main),0%)
-		border-top: 0
+		box-shadow: 0 3px 5px rgba(102, 102, 102, 0.5)
+		border-top: 3px solid color-get($mau,extra)
 		.tab-pane
-			+pad(1rem)
+			+pad(2rem)
+			+fw(400)
+			color: color-get($mau,text-2)
+			p
+				margin-bottom: 1.2rem
+				+lh(1.8rem)
+			table
+				tr
+					.detail
+						+fw(500)
+						padding-left: 1rem
+						width: 40%
+					td
+						vertical-align: top
+						+pad(.8rem null)
+					&:nth-child(even)
+						background: darken(color-get($mau,trang),3%)
+				+media-breakpoint-up(md)
+					tr
+						.detail
+							width: 25%
+					
