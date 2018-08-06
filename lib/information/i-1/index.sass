@@ -1,0 +1,40 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+section.canhcam-information-1
+	+pad(3rem null)
+	+media-breakpoint-up(lg)
+		+pad(4rem null)
+	.info
+		+pad(3rem)
+		+bor(null, solid color-get($mau,main),1px)
+		+bor-rad(5px)
+		color: color-get($mau,text-2)
+		.form
+			h5
+				color: color-get($mau,main)
+				+fw(600)
+				+fz(1.1rem)
+			.form-group
+				label
+					margin-bottom: 0
+					+fw(400)
+					align-items: center
+				.form-control
+					+pad(.5rem 2rem)
+					background: darken(color-get($mau,trang),5%)
+			+media-breakpoint-up(md)
+				.form-group
+					display: flex
+					justify-content: space-between
+					align-items: center
+					label
+						white-space: nowrap
+					.form-control
+						max-width: 250px
+			+media-breakpoint-up(lg)
+				.form-group
+					.form-control
+						max-width: 400px

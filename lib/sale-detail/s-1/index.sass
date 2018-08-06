@@ -8,13 +8,21 @@ section.canhcam-sale-detail-1
 	+pad(3rem null 1rem)
 	+media-breakpoint-up(lg)
 		+pad(4rem null 1rem)
+	.modal-content
+		.modal-header
+			.modal-title
+				text-transform: uppercase
+				align-items: center
+				+fz(1.5rem)
+				+fw(600)
 	.owl-nav
 		button
 			&.owl-prev, &.owl-next
 				+pad(.5rem_)
 				width: 3rem
 				height: 3rem
-				background: darken(color-get($mau,trang),5%)
+				color: color-get($mau,trang)
+				background: darken(color-get($mau,main),0%)
 				+bor-rad(50%)
 				text-align: center
 				&:focus
@@ -27,7 +35,6 @@ section.canhcam-sale-detail-1
 			button
 				&.owl-prev, &.owl-next
 					+fz(2rem)
-					color: color-get($mau,trang)
 					width: auto
 					height: auto
 					background: none
@@ -57,15 +64,15 @@ section.canhcam-sale-detail-1
 					+fz(1.2rem)
 					+fw(700)
 					color: color-get($mau,extra)
-				a.btn-contact
-					+pad(.5rem 2rem)
-					+bor(null, solid color-get($mau,main),2px)
-					background: color-get($mau,main)
-					color: color-get($mau,trang)
-					+bor-rad(0)
-					&:hover
-						background: none
-						color: color-get($mau,main)
+	a.btn-contact
+		+pad(.5rem 2rem)
+		+bor(null, solid color-get($mau,main),2px)
+		background: color-get($mau,main)
+		color: color-get($mau,trang)
+		+bor-rad(0)
+		&:hover
+			background: none
+			color: color-get($mau,main)
 
 			.detail
 				width: 45%

@@ -1,0 +1,20 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.section.canhcam-nav-8
+	.menu-list
+		display: flex
+		flex-direction: column
+
+		a.item
+			+fw(400)
+			text-decoration: none
+			+pad(.7rem 2rem)
+			color: color-get($mau,text-2)
+			border-bottom: 1px dashed darken(color-get($mau,trang),20%)
+			&.active
+				background: color-get($mau,main)
+				color: color-get($mau,trang)
+				border-bottom: 0

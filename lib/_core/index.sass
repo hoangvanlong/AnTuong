@@ -220,6 +220,8 @@ header
 		+fz(2.2rem)
 	&.white
 		color: color-get($mau,trang)
+	&.main
+		color: color-get($mau,main)
 	&.upcase
 		text-transform: uppercase
 	&.left
@@ -237,3 +239,11 @@ a.btn-more
 .mt-lg-30p
 	+media-breakpoint-up(lg)
 		margin-top: 30px
+figure
+	.boxzoom
+		overflow: hidden
+	&:hover
+		.boxzoom
+			img
+				transform: scale(1.1)
+				transition: .3s ease-in-out

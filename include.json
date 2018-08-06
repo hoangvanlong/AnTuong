@@ -77,6 +77,18 @@
                 "support/s-1"
             ]
         },
+        "information": {
+            "body": [
+                "nav/n-8",
+                "information/i-1"
+            ]
+        },
+        "history": {
+            "body": [
+                "nav/n-6",
+                "history/h-1"
+            ]
+        },
         "count": {
             "body": [
                 "count/c-1"
@@ -89,6 +101,11 @@
                 "tabs/t-2"
             ]
         },
+        "register": {
+            "body": [
+                "register/r-1"
+            ]
+        },
         "blog-detail": {
             "body": [
                 "news-details/n-1"
@@ -96,6 +113,7 @@
         },
         "pay": {
             "body": [
+                "nav/n-7",
                 "boxes/b-9"
             ]
         },

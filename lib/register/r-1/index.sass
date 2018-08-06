@@ -1,0 +1,53 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+section.canhcam-register-1
+	+pad(3rem null)
+	+media-breakpoint-up(lg)
+		+pad(4rem null)
+	.register-form
+		+fw(400)
+		+pad(2rem)
+		+bor(null, solid color-get($mau,main),1px)
+		+bor-rad(5px)
+		color: color-get($mau,text-2)
+		.validator
+			.form-group
+				label
+					+fw(400)
+				align-items: center
+				.form-control
+					+pad(.5rem)
+					background: darken(color-get($mau,trang),5%)
+			.form-checkbox
+				display: flex
+				
+				position: relative
+				align-items: center
+				.checkbox
+					margin-right: 1rem
+
+			+media-breakpoint-up(md)
+				.form-group
+					display: flex
+					justify-content: space-between
+					label
+						white-space: nowrap
+					.form-control
+						max-width: 250px
+			+media-breakpoint-up(lg)
+				.form-group
+					.form-control
+						max-width: 400px
+			.submit
+				.btn-register
+					background: color-get($mau,extra)
+					+pad(.5rem 7rem)
+				p
+					margin-top: 1rem
+					a
+						margin-left: 1rem
+		+media-breakpoint-up(md)
+			+pad(4rem null)

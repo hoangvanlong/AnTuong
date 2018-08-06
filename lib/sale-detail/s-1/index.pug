@@ -63,4 +63,27 @@ section.canhcam-sale-detail-1
 							span 18 tỷ
 					tr
 						td
-							a.btn.btn-contact(href="#").mt-2 Liên hệ ngay
+							a.btn.btn-contact(href="#" data-toggle="modal" data-target="#exampleModal").mt-2 Liên hệ ngay
+	#exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+		.modal-dialog(role='document')
+			.modal-content
+				.modal-header
+					h5#exampleModalLabel.modal-title Điền thông tin
+					button.close(type='button', data-dismiss='modal', aria-label='Close')
+						p(aria-hidden='true') ×
+				.modal-body
+					form
+						.form-group
+							label(for='exampleInputName') Họ tên
+							input#exampleInputEmail1.form-control(type='text')
+						.form-group
+							label(for='exampleInputEmail') Email
+							input#exampleInputEmail1.form-control(type='text')
+						.form-group
+							label(for='exampleInputTitle') Tiêu đề
+							input#exampleInputEmail1.form-control(type='text')
+						.form-group
+							label(for='exampleInputContent') Nội dung
+							textarea#exampleInputEmail1.form-control(type='text')
+				.modal-footer
+					a.btn.btn-contact(href="#").mt-2 Liên hệ ngay

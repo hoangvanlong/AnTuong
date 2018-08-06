@@ -30,7 +30,6 @@
 					+fz(1rem)
 					+fw(400)
 					+media-breakpoint-up(md)
-						white-space: nowrap
 				th,td
 					border: none
 				.submit-value
@@ -58,7 +57,7 @@
 			+fz(1.29rem)
 			color: color-get($mau , text-1)
 		.table
-			border: 1px solid color-get($mau , tab-2)
+			border: 1px solid #ccc
 			+media-breakpoint-down(sm)
 				display: block
 				width: 100%
@@ -68,13 +67,13 @@
 		thead
 			tr
 				th
-					border-right: 1px solid color-get($mau , tab-3)
+					border-right: 1px solid color-get($mau , trang)
 					&:last-child
 						border: none
 		tbody
 			tr
 				th,td
-					border-right: 1px solid color-get($mau , tab-3)
+					border-right: 1px solid lighten(color-get($mau , main),50%)
 				td
 					&:last-child
 						border: none
