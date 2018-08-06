@@ -13,16 +13,20 @@ section.canhcam-information-1
 		+bor-rad(5px)
 		color: color-get($mau,text-2)
 		.form
+			margin-top: 3rem
+			&:first-child
+				margin-top: 0
 			h5
 				color: color-get($mau,main)
 				+fw(600)
-				+fz(1.1rem)
+				+fz(1.2rem)
 			.form-group
 				label
 					margin-bottom: 0
 					+fw(400)
 					align-items: center
-				.form-control
+				.form-control, select
+					+bor-rad(2px)
 					+pad(.5rem 2rem)
 					background: darken(color-get($mau,trang),5%)
 			+media-breakpoint-up(md)
@@ -32,9 +36,9 @@ section.canhcam-information-1
 					align-items: center
 					label
 						white-space: nowrap
-					.form-control
+					.form-control,select
 						max-width: 250px
 			+media-breakpoint-up(lg)
 				.form-group
-					.form-control
+					.form-control, select
 						max-width: 400px

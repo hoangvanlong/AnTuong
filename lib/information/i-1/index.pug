@@ -4,7 +4,7 @@ section.canhcam-information-1
 			.col-lg-3
 				include ../../nav/n-8/index.pug
 			.col-lg-9
-				.info
+				.info.mt-5.mt-md-0
 					h1.antuong-title.upcase.text-center.main.mb-4.mb-lg-5 thông tin cá nhân
 					.row.justify-content-center
 						.col-md-10
@@ -22,3 +22,19 @@ section.canhcam-information-1
 								.form-group
 									label Nhập mật khẩu mới *
 									input.form-control(type='text')
+							.form
+								h5.mb-4 Thông tin cá nhân
+								.form-group
+									label Họ tên *
+									input.form-control(type='text', placeholder='Truong Dinh Long')
+								.form-group
+									label Ngày sinh *
+									input.form-control(type='text', placeholder='24/10/1999')
+								.form-group
+									label Địa chỉ *
+									select
+										option Quận 1
+								.form-group
+									label Nhập mật khẩu mới *
+									input.form-control(type='text')
+
