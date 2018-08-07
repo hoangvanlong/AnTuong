@@ -7,6 +7,12 @@ section.canhcam-information-1
 	+pad(3rem null)
 	+media-breakpoint-up(lg)
 		+pad(4rem null)
+	.btn-update
+		width: 100%
+		background: color-get($mau,extra)
+		+media-breakpoint-up(lg)
+			+pad(null 7rem)
+			width: auto
 	.info
 		+pad(3rem 2rem)
 		+bor(null, solid color-get($mau,main),1px)
@@ -25,20 +31,28 @@ section.canhcam-information-1
 					margin-bottom: 0
 					+fw(400)
 					align-items: center
-				.form-control, select
+				.form-control,select
 					+bor-rad(2px)
+					+fw(500)
+					width: 100%
+					color: color-get($mau,text-2)
+					+bor(null, solid darken(color-get($mau,trang),20%),1px)
 					+pad(.5rem 2rem)
-					background: darken(color-get($mau,trang),5%)
+					background: darken(color-get($mau,trang),3%)
 			+media-breakpoint-up(md)
+				select
+					width: 250px
 				.form-group
 					display: flex
 					justify-content: space-between
 					align-items: center
 					label
 						white-space: nowrap
-					.form-control,select
+					.form-control
 						max-width: 250px
 			+media-breakpoint-up(lg)
 				.form-group
-					.form-control, select
+					select
+						width: 400px
+					.form-control
 						max-width: 400px

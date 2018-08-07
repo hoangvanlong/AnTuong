@@ -12,7 +12,7 @@ section.canhcam-information-1
 								h5.mb-4 Thông tin đăng nhập
 								.form-group
 									label Tên đăng nhập *
-									input.form-control(type='text', placeholder='Dinh Long')
+									input.form-control(type='text', placeholder='DinhLong')
 								.form-group
 									label Email *
 									input.form-control(type='text', placeholder='helloo@gmail.com')
@@ -30,11 +30,48 @@ section.canhcam-information-1
 								.form-group
 									label Ngày sinh *
 									input.form-control(type='text', placeholder='24/10/1999')
+								.form-checkbox.form-group
+									label Giới tính *
+									.sex
+										input.mx-4(type='radio', name='inlineRadioOptions', value='option2')
+										| Nam
+										input.mx-4(type='radio', name='inlineRadioOptions', value='option2')
+										| Nữ
+
 								.form-group
 									label Địa chỉ *
+									input.form-control(type='text', placeholder='156 Nguyễn Ánh Thủ')
+								.form-group
+									label Quận/ huyện *
 									select
 										option Quận 1
 								.form-group
-									label Nhập mật khẩu mới *
-									input.form-control(type='text')
+									label Tỉnh/ thành phố *
+									select
+										option Tp Hồ Chí Minh
+								.form-group
+									label Số CMND *
+									input.form-control(type='text', placeholder='01229888')
+								.form-group
+									label Địa chỉ *
+									input.form-control(type='text', placeholder='0901234567')
+
+							.form
+								h5.mb-4 Thông tin ngân hàng
+								.form-group
+									label Tên ngân hàng *
+									input.form-control(type='text', placeholder='Ngân hàng Vietcombank')
+								.form-group
+									label Số tài khoản *
+									input.form-control(type='text', placeholder='090090909')
+								.form-group
+									label Chủ tài khoản *
+									input.form-control(type='text', placeholder='Trương Đình Long')
+								.form-group
+									label Mã số thuế cá nhân *
+									input.form-control(type='text', placeholder='01229888')
+							.submit.text-center.mt-5
+								button.btn.btn-update.text-uppercase(type="submit")
+									| Cập nhật thông tin
+								
 

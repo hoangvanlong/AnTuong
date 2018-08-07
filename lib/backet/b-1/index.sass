@@ -1,0 +1,66 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+section.canhcam-backet-1
+	+pad(3rem null)
+	+media-breakpoint-up(lg)
+		+pad(4rem null)
+	.info
+		+media-breakpoint-up(lg)
+			+pad(3rem 2rem)
+			+bor(null, solid color-get($mau,main),1px)
+			+bor-rad(5px)
+		color: color-get($mau,text-2)
+		a.item
+			text-decoration: none
+			+fw(400)
+			figure
+				+pad(null 5px)
+				figcaption
+					+pad(1rem)
+					+bor(null, solid darken(color-get($mau,trang),20%),1px)
+					h5
+						+fw(700)
+						+fz(1.2rem)
+						color: color-get($mau,main)
+						margin-bottom: 1rem
+					p
+						color: color-get($mau,text-2)
+						margin-bottom: .5rem
+						+fz(.95rem)
+						span
+							+fw(500)
+							color: color-get($mau,extra)
+				.status
+					+fz(.95rem)
+					justify-content: space-between
+					+pad(1rem)
+					+bor(null, solid darken(color-get($mau,trang),20%),1px)
+					border-top: 0
+					p
+						margin-bottom: 0
+						color: color-get($mau,text-2)
+					span
+						color: color-get($mau,main)
+						+fw(500)
+					.detail
+						p
+							margin-bottom: 0
+							color: color-get($mau,text-2)
+							+ p
+								margin-left: .5rem
+							em
+								color: color-get($mau,text-3)
+
+						span
+							color: color-get($mau,main)
+							+fw(500)
+				&:hover
+					figcaption
+						h5
+							color: color-get($mau,main)
+					.status
+						span
+							color: color-get($mau,main)

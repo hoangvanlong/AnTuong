@@ -41,13 +41,16 @@ section.canhcam-register-1
 				.form-group
 					.form-control
 						max-width: 400px
-			.submit
-				.btn-register
-					background: color-get($mau,extra)
-					+pad(.5rem 7rem)
-				p
-					margin-top: 1rem
-					a
-						margin-left: 1rem
 		+media-breakpoint-up(md)
 			+pad(4rem null)
+	.submit
+		.btn-register
+			background: color-get($mau,extra)
+			width: 100%
+			+media-breakpoint-up(lg)
+				+pad(.5rem 7rem)
+				width: auto
+		p
+			margin-top: 1rem
+			a
+				margin-left: 1rem

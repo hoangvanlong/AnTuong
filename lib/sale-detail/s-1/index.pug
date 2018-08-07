@@ -72,18 +72,16 @@ section.canhcam-sale-detail-1
 					button.close(type='button', data-dismiss='modal', aria-label='Close')
 						p(aria-hidden='true') ×
 				.modal-body
-					form
+					form.validator
 						.form-group
-							label(for='exampleInputName') Họ tên
-							input#exampleInputEmail1.form-control(type='text')
+							input.form-control(type='text', placeholder='Họ và tên..', data-error="Vui lòng nhập thông tin", required)
+							.help-block.with-errors
 						.form-group
-							label(for='exampleInputEmail') Email
-							input#exampleInputEmail1.form-control(type='text')
+							input.form-control(type='text', placeholder='Email..', data-error="Vui lòng nhập thông tin", pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", required)
+							.help-block.with-errors
 						.form-group
-							label(for='exampleInputTitle') Tiêu đề
-							input#exampleInputEmail1.form-control(type='text')
-						.form-group
-							label(for='exampleInputContent') Nội dung
-							textarea#exampleInputEmail1.form-control(type='text')
-				.modal-footer
-					a.btn.btn-contact(href="#").mt-2 Liên hệ ngay
+							input.form-control(type='text', placeholder='Số điện thoại...', data-error="Vui lòng nhập thông tin", pattern="^[_A-z0-9]{1,}$", required)
+							.help-block.with-errors
+						.text-right
+							button.btn.btn-contact.text-uppercase(type="submit")
+								| Gửi

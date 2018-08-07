@@ -89,6 +89,12 @@
                 "history/h-1"
             ]
         },
+        "backet": {
+            "body": [
+                "nav/n-6",
+                "backet/b-1"
+            ]
+        },
         "count": {
             "body": [
                 "count/c-1"
@@ -119,6 +125,7 @@
         },
         "contact": {
             "body": [
+                "contact/c-1",
                 "form/f-1"
             ]
         }

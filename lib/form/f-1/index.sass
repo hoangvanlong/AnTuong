@@ -8,16 +8,33 @@
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
 	.info
-		h3
-			+fz(1.3rem)
-			text-transform: uppercase
 		.inf
-			+pad(2rem)
+			background: darken(color-get($mau,trang),3%)
+			+pad(3rem 2rem)
 			h2
-				+fz(1.3rem)
+				+fz(1.8rem)
+				+fw(500)
+				text-transform: uppercase
+				color: color-get($mau,main)
+			p
+				+fw(400)
+				color: color-get($mau,text-2)
+		.form-group
+			.form-control
+				+pad(.8rem null)
+				background: darken(color-get($mau,trang),3%)
 	form
 		.help-block
 			ul
 				margin-bottom: 0
 				+fz(.9rem)
 				color: color-get($mau,do-1)
+	.btn-send
+		background: color-get($mau,extra)
+		text-transform: uppercase
+		+fz(1.2rem)
+		+bor-rad(0)
+		+pad(.8rem 3rem)
+		+fw(500)
+		color: color-get($mau,text-1)
+		opacity: 1
