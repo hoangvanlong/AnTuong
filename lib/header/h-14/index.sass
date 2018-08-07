@@ -67,31 +67,35 @@
 				margin-left: 0
 				flex-direction: row
 				a
+					em
+						+fz(1.2rem)
+					
 					+ a
 						margin-left: .5rem
+						+media-breakpoint-up(lg)
+							margin-left: .3rem
 					.fa-facebook-f
 						color: color-get($icon,facebook)
 					.fa-youtube
 						color: color-get($icon,youtube)
+						&:before
+							font-family: 'FontAwesome'
 			&.button
 				a
-					+pad(.4rem 2rem .3rem 2rem)
+					+pad(1rem 2rem)
 					&.register, &.login
 						background: darken(color-get($mau,trang),0%)
 						color: color-get($mau,den)
 					&.login
 						margin-left: 1rem
-				+media-breakpoint-up(lg)
-					padding-top: .3rem
-					a
-						+pad(.4rem 2rem 0 2rem)
+					+media-breakpoint-up(lg)
+						+pad(.4rem 2rem .3rem 2rem)
 						&.register
 							background: color-get($mau,main)
 							color: color-get($mau,trang)
 						&.login
 							margin-left: .3rem
 							background: color-get($mau,extra)
-							color: color-get($mau,den)
 	.k-menu-bar
 		color: color-get($mau,main)
 		.k-button-toggle

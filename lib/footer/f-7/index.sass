@@ -85,7 +85,20 @@
 					color: darken(color-get($mau,text-2), 0%) 
 					&:hover 
 						text-decoration: underline
-						color: lighten(color-get($mau,main), 0%) 
+						color: lighten(color-get($mau,main), 0%)
+	.search
+		position: relative
+		.form-control
+			+pad(.3rem 1rem)
+			&::placeholder
+				+fz(.9rem)
+				color: #7e633a
+		.btn-send
+			+pos(abs, 0 0 null null)
+			background: none
+			color: color-get($mau,main)
+			+fz(.9rem)
+			+fw(600)
 	.copy-right
 		+fz(.9rem)
 		+pad(1rem null)
@@ -104,3 +117,8 @@
 					padding-left: .6rem
 				&:hover
 					color: color-get($mau,main)
+	#advisory
+		position: fixed
+		bottom: 0
+		right: 7rem
+		z-index: 999
