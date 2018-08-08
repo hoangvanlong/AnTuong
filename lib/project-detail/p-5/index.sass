@@ -4,13 +4,19 @@
 //////////////////////////////////////
 
 
-section.canhcam-project_detail-5
+section.canhcam-project-detail-5
+	
 	+pad(3rem 0)
 	background: darken(color-get($mau,trang),3%)
 	+media-breakpoint-up(lg)
+		.slide
+			+pad(null 6rem)
 		+pad(4rem 0)
 	.slidemonth
 	.carousel-1
+		+pad(1rem 1rem)
+		background: color-get($mau,main)
+		color: color-get($mau,trang)
 		.item
 			position: relative
 			justify-content: center
@@ -18,13 +24,12 @@ section.canhcam-project_detail-5
 			h5
 				cursor: pointer
 				margin-bottom: 0
-			&.click
+			&.active
 				color: color-get($mau,extra)
-				&:after
-					color: color-get($mau,text-1)
 		// Nav
 		
 		.owl-nav
+			
 			margin-top: 0
 			button
 				&.owl-prev, &.owl-next
@@ -33,8 +38,8 @@ section.canhcam-project_detail-5
 					height: 3rem
 					+bor-rad(50%)
 					text-align: center
-					color: color-get($mau,trang)
-					background: color-get($mau,main)
+					color: color-get($mau,main)
+					background: color-get($mau,trang)
 					&:focus
 						outline: none
 				+media-breakpoint-up(lg)
@@ -43,48 +48,59 @@ section.canhcam-project_detail-5
 						background: transparent
 						+transform(translate(-50%,-50%))
 						&.owl-prev
-							+pos(abs,6px null null 5px)
+							+pos(abs,20px null null 20px)
 						&.owl-next
-							+pos(abs,6px -35px null null)
+							+pos(abs,20px -20px null null)
+		.owl-dots
+			span
+				width: 8px
+				height: 8px
+			.owl-dot
+				&.active
+					span
+						background: color-get($mau,extra)
+			
 	.carousel-2
-		// Nav
-		+pad(null 5rem)
-		
+		.item
+			display: none
+			&.active
+				display: block
 		.owl-nav
 			button
 				&.owl-prev, &.owl-next
 					+pad(.5rem_)
 					width: 3rem
 					height: 3rem
-					+bor-rad(50%)
-					text-align: center
 					color: color-get($mau,trang)
+					+bor-rad(50%)
 					background: color-get($mau,main)
+					text-align: center
 					&:focus
 						outline: none
-				+media-breakpoint-up(lg)
+				&:hover, &.active
 					&.owl-prev, &.owl-next
-						+fz(2.5rem)
+						background: color-get($mau,main)
+						color: color-get($mau,trang)
+			+media-breakpoint-up(md)
+				+opacity(1)
+				margin-top: 0
+				+transition(all .3s ease-in-out)
+				button
+					&.owl-prev, &.owl-next
 						width: auto
 						height: auto
-						background: transparent
-						+transform(translate(-50%,-50%))
-						&.owl-prev
-							+pos(abs,50% null null 7rem)
-						&.owl-next
-							+pos(abs,50% 3rem null null)
-		// Dots
-		.owl-dots
-			.owl-dot
-				&:focus
-					outline: none
-				span
-					background: darken(color-get($mau,trang),5%)
-				&.active
-					span
-						background: color-get($mau,main)
-	.slidemonth
-		+pad(1rem null)
-		+mar(0 5rem)
-		background: color-get($mau,main)
-		color: color-get($mau,trang)
+						border-radius: 0
+						background: none
+						+fz(3rem)
+						margin: 0
+						+transform(translateY(-50%))
+						&:focus
+							outline: none
+						&:hover, &.active
+							&.owl-prev, &.owl-next
+								background: none
+								color: color-get($mau,extra)
+					&.owl-prev
+						+pos(abs, 50% null null 1rem)
+					&.owl-next
+						+pos(abs, 50% 1rem null null)	
