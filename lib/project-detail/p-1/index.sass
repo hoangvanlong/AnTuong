@@ -7,11 +7,11 @@
 section.canhcam-project-detail-1
 	+pad(3rem null)
 	+media-breakpoint-up(lg)
-	background: url('../img/antuong/bg_3.png')
-	+pad(4rem null)
+	background: url('../img/antuong/project_detail/detail_bg_2.png')
+	+pad(4rem null 7rem)
 	position: relative
 	h1
-		margin-bottom: 3rem
+		margin-bottom: 2rem
 		
 	.content-right
 		display: flex
@@ -20,6 +20,7 @@ section.canhcam-project-detail-1
 
 		.content
 			+fw(400)
+			padding-right: 1rem
 			max-height: 240px
 			overflow-y: scroll
 			&::-webkit-scrollbar-track
@@ -29,6 +30,7 @@ section.canhcam-project-detail-1
 			&::-webkit-scrollbar
 				width: 3px
 			p
+				+fz(1.1rem)
 				color: color-get($mau,text-2)
 	
 	+media-breakpoint-up(lg)
@@ -37,8 +39,10 @@ section.canhcam-project-detail-1
 			content: ''
 			background: url(../img/antuong/bg_3.png)
 			width: 100%
-			height: 23rem
+			height: 27rem
 			+pos(abs,null 0 0 null)
 			z-index: -1
 		h1
-			marign-bottom: 4rem
+			margin-bottom: 5rem
+		.content-right
+			+pad(null 2rem)

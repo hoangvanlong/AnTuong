@@ -25,6 +25,7 @@ section.canhcam-project_detail-5
 		// Nav
 		
 		.owl-nav
+			margin-top: 0
 			button
 				&.owl-prev, &.owl-next
 					+pad(.5rem_)
@@ -38,15 +39,16 @@ section.canhcam-project_detail-5
 						outline: none
 				+media-breakpoint-up(lg)
 					&.owl-prev, &.owl-next
-						color: color-get($mau,den)
+						color: color-get($mau,trang)
 						background: transparent
 						+transform(translate(-50%,-50%))
 						&.owl-prev
-							+pos(abs,6px null null 0px)
+							+pos(abs,6px null null 5px)
 						&.owl-next
-							+pos(abs,6px -40px null null)
+							+pos(abs,6px -35px null null)
 	.carousel-2
 		// Nav
+		+pad(null 5rem)
 		
 		.owl-nav
 			button
@@ -68,9 +70,9 @@ section.canhcam-project_detail-5
 						background: transparent
 						+transform(translate(-50%,-50%))
 						&.owl-prev
-							+pos(abs,50% null null 2rem)
+							+pos(abs,50% null null 7rem)
 						&.owl-next
-							+pos(abs,50% -1rem null null)
+							+pos(abs,50% 3rem null null)
 		// Dots
 		.owl-dots
 			.owl-dot
@@ -81,3 +83,8 @@ section.canhcam-project_detail-5
 				&.active
 					span
 						background: color-get($mau,main)
+	.slidemonth
+		+pad(1rem null)
+		+mar(0 5rem)
+		background: color-get($mau,main)
+		color: color-get($mau,trang)

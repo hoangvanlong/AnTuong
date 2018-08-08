@@ -36,6 +36,7 @@
 				&:last-child
 					margin-right: 0
 	.othernews
+		border-bottom: 2px solid color-get($mau,extra)
 		overflow: hidden
 		width: 100%
 		hr
@@ -101,9 +102,11 @@
 			h2
 				background: color-get($mau,extra)
 				color: color-get($mau,text-1)
-				+pad(1rem)
+				+pad(1rem null 1rem 2rem)
+				+fw(600)
+				+fz(1.6rem)
 			.lists
-				+pad(1rem)
+				+pad(1rem null)
 				.item
 					border-bottom: 1px dashed darken(color-get($mau,trang) ,10%)
 					margin-bottom: 1rem
@@ -122,12 +125,12 @@
 							display: block
 							height: 100%
 							+pos(abs, 0 null null 0)
-							width: 450%
-							max-width: 45%
+							width: 55%
+							max-width: 55%
 						img
 							display: none
 						figcaption
-							+pad(0 0 0 calc(45% + 1rem))
+							+pad(0 0 0 calc(55% + 1rem))
 							p
 								display: none
 					&:hover

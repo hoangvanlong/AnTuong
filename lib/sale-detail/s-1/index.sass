@@ -54,7 +54,7 @@ section.canhcam-sale-detail-1
 	table
 		color: color-get($mau,text-2)
 		tr
-			border-bottom: 1px dashed color-get($mau,text-3)
+			border-bottom: 1px dashed #e1e1e1
 			vertical-align: top
 			&:last-child
 				border-bottom: 0
@@ -66,13 +66,12 @@ section.canhcam-sale-detail-1
 					color: color-get($mau,extra)
 	.btn-contact
 		+pad(.5rem 2rem)
-		+bor(null, solid color-get($mau,main),2px)
 		background: color-get($mau,main)
 		color: color-get($mau,trang)
 		+bor-rad(0)
 		&:hover
-			background: none
-			color: color-get($mau,main)
+			background: color-get($mau,extra)
+			color: color-get($mau,text-1)
 
 			.detail
 				width: 45%

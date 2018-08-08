@@ -27,7 +27,7 @@
 					z-index: 1
 					display: block
 					box-sizing: border-box
-					+pad(.6rem 3rem)
+					+pad(.6rem 5rem)
 					color: darken(color-get($mau,trang),50%)
 					text-decoration: none
 					position: relative
@@ -43,6 +43,7 @@
 					&.active,&:hover
 						color: color-get($mau,text-1)
 						background: color-get($mau,extra)
+						+fw(600)
 						&:after
 							display: none
 				&:last-child
