@@ -1,0 +1,16 @@
+extends _layout/layout.pug
+block variables
+	- var title = "project"
+	- var description = "Description for project page"
+	- var bodyclass = "project"
+	- var href = "/project.html"
+block header
+	include ../lib/header/h-14/index.pug
+block body
+	include ../lib/breadcrumb/b-1/index.pug
+	include ../lib/nav/n-5/borrow.pug
+	include ../lib/count/c-1/index.pug
+	include ../lib/bonus/b-1/index.pug
+block footer
+	include ../lib/footer/f-1/index.pug
+	include ../lib/footer/f-7/index.pug

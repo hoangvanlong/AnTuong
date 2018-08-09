@@ -2,57 +2,54 @@
 //////////////////////////////////////
 // CODE
 //////////////////////////////////////
-
+	
 section.canhcam-sale-2
-	+pad(2rem null)
-	a.item
-		text-decoration: none
-		+fw(400)
-		figure
-			figcaption
-				+pad(1rem)
-				+bor(null, solid darken(color-get($mau,trang),20%),1px)
-				h5
+	+pad(1.5rem null null null)
+	.select
+		background: url('../img/antuong/sale/sale_bg.png')
+		+pad(2rem)
+		h4
+			color: #5f5e5a
+			+fw(400)
+			+fz(1.4rem)
+		.sl-city
+			position: relative
+			
+			margin-top: 1rem
+			&:after
+				content: '\e874'
+				font-family: 'LinearIcons-Free'
+				color: #acaba8
+				+pos(abs,0 1rem null null)
+				+transform(translate(-50%,50%))
+			select
+				height: 100%
+				width: 100%
+				+pad(.5rem 1rem)
+				+bor-rad(5px)
+				background: none
+				color: #acaba8
+				+bor(null, solid #cccac4,1px)
+				-webkit-appearance: none
+				-moz-appearance: none
+				&:focus
+					+bor(null, solid color-get($mau,trang),1px)
+					color: #acaba8
+					box-shadow: 0
 					+fw(600)
-					+fz(1.2rem)
-					color: color-get($mau,main)
-					margin-bottom: 1rem
-				p
-					color: color-get($mau,text-2)
-					margin-bottom: .5rem
-					span
-						+fw(500)
-						color: color-get($mau,extra)
-			.status
-				justify-content: space-between
-				+pad(1rem)
-				+bor(null, solid darken(color-get($mau,trang),20%),1px)
-				border-top: 0
-				p
-					margin-bottom: 0
-					color: color-get($mau,text-2)
-					+ p
-						margin-left: 1rem
-					em
-						color: color-get($mau,text-3)
-
-				span
-					color: color-get($mau,main)
-					+fw(500)
-			&:hover
-				box-shadow: 0 0 5px color-rgba(color-get($mau,den),.5)
-				figcaption
-					h5
-						color: color-get($mau,main)
-				.status
-					span
-						color: color-get($mau,main)
-	+media-breakpoint-up(lg)
-		a.item
-			figure
-				figcaption
-					h5
-						color: color-get($mau,den)
-				.status
-					span
-						color: color-get($mau,text-3)
+				option
+					color: color-get($mau,text-1)
+				+media-breakpoint-up(lg)
+	a.btn-search
+		margin-top: 1rem
+		justify-content: center
+		+pad(.4rem 4rem)
+		background-image: -moz-linear-gradient( 90deg, rgb(255,199,30) 0%, rgb(255,215,95) 100%)
+		background-image: -webkit-linear-gradient( 90deg, rgb(255,199,30) 0%, rgb(255,215,95) 100%)
+		background-image: -ms-linear-gradient( 90deg, rgb(255,199,30) 0%, rgb(255,215,95) 100%)
+		color: color-get($mau,text-1)
+		+fz(1.3rem)
+		+bor-rad(5px)
+		+fw(400)
+		&:hover
+			background: darken(color-get($mau,extra),10%)

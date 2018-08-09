@@ -1,19 +1,13 @@
 section.canhcam-nav-5
-	ul#ccTabs.nav.nav-tabs(role="tablist")
-		li.nav-item
-			a#nav-01-tab.nav-link.active(data-toggle="tab" href="#nav-01" role="tab" aria-controls="nav-01" aria-selected="true") Câu hỏi thường gặp
-		li.nav-item
-			a#nav-02-tab.nav-link(data-toggle="tab" href="#nav-02" role="tab" aria-controls="nav-02" aria-selected="false") Mẹo quản lí tài chính
-		li.nav-item
-			a#nav-03-tab.nav-link(data-toggle="tab" href="#nav-03" role="tab" aria-controls="nav-03" aria-selected="false") Vay ngân hàng
-		li.nav-item
-			a#nav-04-tab.nav-link(data-toggle="tab" href="#nav-04" role="tab" aria-controls="nav-04" aria-selected="false") Tư vấn thiết kế
-	#ccTabsContent.tab-content
-		#nav-01.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="nav-01-tab")
-			include ../../support/s-1/index.pug
-		#nav-02.tab-pane.fade(role="tabpanel" aria-labelledby="nav-02-tab")
-			h5 hello world
-		#nav-03.tab-pane.fade(role="tabpanel" aria-labelledby="nav-03-tab")
-			include ../../count/c-1/index.pug
-		#nav-04.tab-pane.fade(role="tabpanel" aria-labelledby="nav-04-tab")
-			h5 hello world
+	article.nav-list
+		.container
+			nav
+				ul
+					li
+						a.active(href="./support.html") Câu hỏi thường gặp
+					li
+						a(href="#") Mẹo quản lý tài chính
+					li
+						a(href="./borrow.html") Vay ngân hàng
+					li
+						a(href='#') Tư vấn thiết kế

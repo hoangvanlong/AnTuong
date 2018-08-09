@@ -31,6 +31,7 @@ section.canhcam-information-1
 					margin-bottom: 0
 					+fw(400)
 					align-items: center
+				.sex
 				.form-control,select
 					+bor-rad(2px)
 					+fw(500)
@@ -40,19 +41,19 @@ section.canhcam-information-1
 					+pad(.5rem 2rem)
 					background: darken(color-get($mau,trang),3%)
 			+media-breakpoint-up(md)
-				select
-					width: 250px
 				.form-group
 					display: flex
 					justify-content: space-between
 					align-items: center
 					label
 						white-space: nowrap
-					.form-control
+					.form-control,select,.sex
 						max-width: 250px
+					.sex
+						width: 250px
 			+media-breakpoint-up(lg)
 				.form-group
-					select
-						width: 400px
-					.form-control
-						max-width: 400px
+					.form-control,select,.sex
+						max-width: 380px
+					.sex
+						width: 380px

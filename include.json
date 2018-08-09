@@ -68,7 +68,13 @@
                 "nav/n-3",
                 "breadcrumb/b-1",
                 "sale/s-1",
+                "sale/s-3",
                 "sale/s-2"
+            ]
+        },
+        "statistical": {
+            "body": [
+                "statistical/s-1"
             ]
         },
         "support": {

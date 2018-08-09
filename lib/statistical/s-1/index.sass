@@ -1,0 +1,72 @@
+@import ../../_includes
+
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+	
+section.canhcam-statistical-1
+	+pad(3rem null)
+	+media-breakpoint-up(lg)
+		+pad(4rem null)
+	.table-result
+		+media-breakpoint-up(md)
+			+pad(3rem 2rem)
+			+bor(null, solid color-get($mau,main),1px)
+			border-radius: 5px
+		.result-bold
+			&:last-child
+				td
+					+fw(700)
+		p
+			+fz(1.29rem)
+			color: color-get($mau , text-1)
+		.table
+			border: 1px solid #e1e1e1
+			+media-breakpoint-down(sm)
+				display: block
+				width: 100%
+				overflow-x: auto
+				-webkit-overflow-scrolling: touch
+				-ms-overflow-style: -ms-autohiding-scrollbar
+		thead
+			tr
+				th
+					border-right: 1px solid color-get($mau , trang)
+					+fz(1.2rem)
+					vertical-align: middle
+					text-transform: uppercase
+					+pad(1rem null)
+					+fw(500)
+					&:last-child
+						border: none
+		tbody
+			tr
+				&:hover
+					background: color-get($mau,main)!important
+					transition: .3s ease-in-out
+					td,th
+						color: color-get($mau,trang)
+				th,td
+					+fz(1.1rem)
+					+fw(400)
+					color: color-get($mau,text-2)
+					border-right: 1px solid #e1e1e1
+				td
+					&:last-child
+						border: none
+					&.text-left
+						+pad(null 2rem)
+		th,td
+			+fz(1.1rem)
+			+fw(400)
+			text-align: center
+			border: none
+		tbody
+			tr
+				&:nth-child(even)
+					background: #f1f1f1
+				&:nth-child(odd)
+					background: color-get($mau,trang)
+		thead
+			background: #b7b7b7
+			color: color-get($mau,trang)
