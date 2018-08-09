@@ -3,50 +3,36 @@
 // CODE
 //////////////////////////////////////
 
-
-
 .canhcam-nav-5
-	border-bottom: 1px solid darken(color-get($mau,trang),20%)
-	.nav-list
-		ul
-			margin-bottom: 0
-			display: flex
-			flex-direction: row
-			justify-content: center
-			flex-wrap: wrap
-			padding: 0
-			margin: 0
-			// overflow-x: auto
-			li
-				+transition(all 0.3s ease-in-out)
-				list-style-type: none
+	.nav-tabs
+		justify-content: center
+		border-bottom: 1px solid darken(color-get($mau,trang),10%)
+		.nav-item
+			.nav-link
+				+fw(400)
 				position: relative
-				
-				// Anchor
-				a
-					z-index: 1
-					display: block
-					box-sizing: border-box
-					+pad(.6rem 3rem)
-					color: darken(color-get($mau,trang),50%)
-					text-decoration: none
-					position: relative
-					+fz(1.1rem)
-					+fw(400)
-					+transition(all 0.3s ease-in-out)
-					+media-breakpoint-up(lg)
-						&:after
-							content: '|'
-							color: color-get($mau,xam-2)
-							+pos(abs, 7px -3px null null)
-				
-					&.active,&:hover
-						color: color-get($mau,text-1)
-						background: color-get($mau,extra)
-						+fw(600)
-						&:after
-							display: none
+				border: 0
+				+pad(.6rem 3rem)
+				+fz(1.1rem)
+				color: darken(color-get($mau,text-3),0%)
+				+bor-rad(0)
+				&.active, &:hover
+					background: darken(color-get($mau,extra),0%)
+					color: color-get($mau,text-1)
+					+fw(600)
+					&:after
+						display: none
+			+media-breakpoint-up(lg)
+				.nav-link
+					&:after
+						content: '|'
+						color: color-get($mau,xam-2)
+						+pos(abs, 7px -3px null null)
 				&:last-child
-					a
+					.nav-link
 						&:after
 							display: none
+				
+	.tab-content
+		border: 0
+		border-top: 0

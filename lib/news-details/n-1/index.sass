@@ -43,7 +43,7 @@
 			border-top: 1px dashed darken(color-get($mau,trang) ,10%)
 		h2
 			color: color-get($mau,main)
-			+fz(1.5rem)
+			+fz(1.3rem)
 			margin-bottom: 0
 			text-transform: uppercase
 		h3
@@ -72,11 +72,13 @@
 						padding: 1rem
 
 						h3
-							+fz(1.1rem)
+							+fz(1rem)
+							+lh(1.3rem)
 							+fw(500)
 							color: color-get($mau,text-1)
-						time
-							fz(.9rem)
+						.time
+							+fz(.85rem)
+							margin-bottom: .5rem
 							+fw(400)
 							color: darken(color-get($mau,text-3) ,0%)
 						p
@@ -92,7 +94,7 @@
 						figcaption
 							h3
 								color: darken(color-get($mau,extra),0%)
-							time
+							.time
 								color: darken(color-get($mau,trang) ,20%)
 							p
 								color: darken(color-get($mau,trang) ,70%)
@@ -105,6 +107,12 @@
 				+pad(1rem null 1rem 2rem)
 				+fw(600)
 				+fz(1.6rem)
+			h3
+				overflow: hidden
+				text-overflow: ellipsis
+				-webkit-line-clamp: 3
+				display: -webkit-box
+				-webkit-box-orient: vertical
 			.lists
 				+pad(1rem null)
 				.item
