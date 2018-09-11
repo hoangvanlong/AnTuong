@@ -3,7 +3,7 @@
 // CODE
 //////////////////////////////////////
 
-section.canhcam-register-1
+.canhcam-register-1, .canhcam-salenew-1
 	+pad(3rem null)
 	+media-breakpoint-up(lg)
 		+pad(4rem null)
@@ -15,12 +15,16 @@ section.canhcam-register-1
 		color: color-get($mau,text-2)
 		.validator
 			.form-group
+				align-items: flex-start
 				label
 					+fw(400)
+					padding-top: 9px
 				align-items: center
 				.form-control
 					+pad(.5rem)
 					background: darken(color-get($mau,trang),5%)
+				textarea
+					min-height: 80px
 			.form-checkbox
 				display: flex
 				

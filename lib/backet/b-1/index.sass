@@ -9,12 +9,28 @@ section.canhcam-backet-1
 		+pad(4rem null)
 	.info
 		+media-breakpoint-up(lg)
-			+pad(3rem 2rem)
+			+pad(3rem 2rem 1rem 2rem)
 			+bor(null, solid color-get($mau,main),1px)
 			+bor-rad(5px)
 		color: color-get($mau,text-2)
-		a.item
-			text-decoration: none
+		.nav-tabs
+			margin-bottom: 2rem
+			border: 0
+			justify-content: center
+			li
+				a
+					+fz(1.1rem)
+					+fw(400)
+					color: #666666
+					+pad(null 1rem)
+				&.active
+					a
+						+fw(600)
+						color: color-get($mau,main)
+			&.tab-2
+				margin-top: 2rem
+		.item
+			
 			+fw(400)
 			figure
 				+pad(null 5px)
@@ -33,34 +49,21 @@ section.canhcam-backet-1
 						span
 							+fw(500)
 							color: color-get($mau,extra)
-				.status
-					+fz(.95rem)
-					justify-content: space-between
-					+pad(1rem)
-					+bor(null, solid darken(color-get($mau,trang),20%),1px)
-					border-top: 0
-					p
-						margin-bottom: 0
-						color: color-get($mau,text-2)
-					span
-						color: color-get($mau,main)
-						+fw(500)
-					.detail
-						p
-							margin-bottom: 0
-							color: color-get($mau,text-2)
-							+ p
-								margin-left: .5rem
-							em
-								color: color-get($mau,text-3)
-
-						span
-							color: color-get($mau,main)
-							+fw(500)
-				&:hover
-					figcaption
-						h5
-							color: color-get($mau,main)
-					.status
-						span
-							color: color-get($mau,main)
+						&.bonus
+							+fz(1rem)
+					a.btn-default
+						display: block
+						background: color-get($mau, extra)
+						color: color-get($mau,text-1)
+						+pad(.3rem)
+						+fw(600)
+						margin-top: 1rem
+						text-decoration: none
+						text-align: center
+						i
+							+fz(1.2rem)
+							margin-right: .5rem
+						&:hover
+							color: color-get($mau,trang)
+							background: color-get($mau,main)
+							transition: .3s all ease-in-out

@@ -8,63 +8,134 @@ section.canhcam-history-1
 	+pad(3rem null)
 	+media-breakpoint-up(lg)
 		+pad(4rem null)
-	.table-result
+	.content
 		+media-breakpoint-up(md)
 			+pad(3rem 2rem)
-			+bor(null, solid color-get($mau,main),1px)
 			border-radius: 5px
-		.result-bold
-			&:last-child
-				td
-					+fw(700)
+			+bor(null, solid color-get($mau,main),1px)
+		.table-result
+			.result-bold
+				&:last-child
+					td
+						+fw(700)
+			p
+				+fz(1.29rem)
+				color: color-get($mau , text-1)
+			.table
+				border: 1px solid #e1e1e1
+				+media-breakpoint-down(sm)
+					display: block
+					width: 100%
+					overflow-x: auto
+					-webkit-overflow-scrolling: touch
+					-ms-overflow-style: -ms-autohiding-scrollbar
+			thead
+				tr
+					th
+						border-right: 1px solid color-get($mau , trang)
+						+fz(1.2rem)
+						vertical-align: middle
+						text-transform: uppercase
+						+pad(1rem null)
+						+fw(500)
+						&:last-child
+							border: none
+			tbody
+				tr
+					&:hover
+						background: color-get($mau,main)!important
+						transition: .3s ease-in-out
+						td,th
+							color: color-get($mau,trang)
+					th,td
+						+fz(1.1rem)
+						+fw(400)
+						color: color-get($mau,text-2)
+						border-right: 1px solid #e1e1e1
+					td
+						&:last-child
+							border: none
+			th,td
+				+fz(1.1rem)
+				+fw(400)
+				text-align: center
+				border: none
+			tbody
+				tr
+					&:nth-child(even)
+						background: #f1f1f1
+					&:nth-child(odd)
+						background: color-get($mau,trang)
+			thead
+				background: #b7b7b7
+				color: color-get($mau,trang)
+		.step
+			.info
+				border-bottom: 1px solid #ebebeb
+				+pad(2rem null 3rem null)
+				&:last-child
+					padding-bottom: 0
+					border-bottom: 0
+				.project
+					justify-content: space-between
+					align-items: flex-start
+					.detail
+						h5
+							+fw(600)
+							+fz(1.4rem)
+							margin-bottom: 1rem
+						p
+							margin-bottom: 0
+							color: #999999
+							+lh(1.8)
+							+fw(400)
+					a.btn-cancel
+						background: #e1e1e1
+						color: color-get($mau,text-1)
+						&:hover
+							background: color-get($mau,main)
+							color: color-get($mau,trang)
+				.status
+					margin-top: 2rem
+					h5
+						+fz(1rem)
+						+fw(600)
+						color: #666666
+						margin-bottom: 1.5rem
+					.step-detail
+						position: relative
+						&:after
+							z-index: -1
+							content: ''
+							height: 1px
+							width: 90%
+							background: #ebebeb
+							+pos(abs, 10px null null 50%)
+							+transform(translate(-50%, -50%))
+						.box
+							+pad(null .5rem)
+							
+							&.active
+								.number
+									background: color-get($mau,main)
+							p
+								margin-top: 1rem
+								+fw(400)
+								color: #666666
+							.number
+								width: 20px
+								height: 20px
+								text-align: center
+								+lh(20px)
+								background: #b7b7b7
+								color: color-get($mau,trang)
+								border-radius: 50%
+								+mar(null auto)
+	.note
+		margin-top: 3rem
+		+pad(2rem)
+		background: #f1f1f1
+		border-radius: 5px
 		p
-			+fz(1.29rem)
-			color: color-get($mau , text-1)
-		.table
-			border: 1px solid #e1e1e1
-			+media-breakpoint-down(sm)
-				display: block
-				width: 100%
-				overflow-x: auto
-				-webkit-overflow-scrolling: touch
-				-ms-overflow-style: -ms-autohiding-scrollbar
-		thead
-			tr
-				th
-					border-right: 1px solid color-get($mau , trang)
-					+fz(1.2rem)
-					vertical-align: middle
-					text-transform: uppercase
-					+pad(1rem null)
-					+fw(500)
-					&:last-child
-						border: none
-		tbody
-			tr
-				&:hover
-					background: color-get($mau,main)!important
-					transition: .3s ease-in-out
-					td,th
-						color: color-get($mau,trang)
-				th,td
-					+fz(1.1rem)
-					+fw(400)
-					color: color-get($mau,text-2)
-					border-right: 1px solid #e1e1e1
-				td
-					&:last-child
-						border: none
-		th,td
-			+fz(1.1rem)
 			+fw(400)
-			text-align: center
-			border: none
-		tbody
-			tr
-				&:nth-child(even)
-					background: #f1f1f1
-				&:nth-child(odd)
-					background: color-get($mau,trang)
-		thead
-			background: #b7b7b7
-			color: color-get($mau,trang)
+			color: #666666

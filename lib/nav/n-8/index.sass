@@ -4,11 +4,10 @@
 //////////////////////////////////////
 
 .section.canhcam-nav-8
-	+bor(null,solid color-get($mau,main),1px)
+	
 	.menu-list
 		display: flex
 		flex-direction: column
-
 		a.item
 			+fw(400)
 			text-decoration: none
@@ -24,8 +23,44 @@
 				padding-bottom: 0.77rem
 				&:last-child
 					padding-bottom: 0.7rem
+	.detail
+		margin-top: 2rem
+		a
+			text-decoration: underline
+		.box
+			margin-bottom: 2rem
+			text-align: center
+			+pad(1rem)
+			+bor-rad(20px)
+			box-shadow: 0 0 10px 2px darken(color-get($mau,trang),10%)
+			figure
+				.icon
+					em
+						+fz(3rem)
+						&.mdi-cash-usd
+							color: #ffc71e
+						&.mdi-account-plus
+							color: #0099cc
+						&.mdi-home
+							color: #f85e35
+						&.mdi-account-box
+							color: #1dc87e
+						
+						
+			figcaption
+				.number
+					+fz(2.8rem)
+					
+				p
+					+fw(400)
+					color: #808080
 	+media-breakpoint-up(lg)
 		border: 0
 		a.item
 			&:last-child
 				border-bottom: 1px dashed darken(color-get($mau,trang),20%)!important
+		.detail
+			.item
+				&:last-child
+					.box
+						margin-bottom: 0

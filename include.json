@@ -134,6 +134,11 @@
                 "contact/c-1",
                 "form/f-1"
             ]
+        },
+        "sale-01": {
+            "body": [
+                "sale-01/s-1"
+            ]
         }
     }
 }
