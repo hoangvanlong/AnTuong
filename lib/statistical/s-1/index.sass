@@ -4,7 +4,7 @@
 // CODE
 //////////////////////////////////////
 	
-section.canhcam-statistical-1
+.canhcam-statistical-1, .canhcam-customer-1, .canhcam-introduce-1
 	+pad(3rem null)
 	+media-breakpoint-up(lg)
 		+pad(4rem null)
@@ -13,6 +13,9 @@ section.canhcam-statistical-1
 			+pad(3rem 2rem)
 			+bor(null, solid color-get($mau,main),1px)
 			border-radius: 5px
+		p
+			color: color-get($mau,text-1)
+			+fw(400)
 		.result-bold
 			&:last-child
 				td
@@ -47,6 +50,7 @@ section.canhcam-statistical-1
 					td,th
 						color: color-get($mau,trang)
 				th,td
+					vertical-align: middle
 					+fz(1.1rem)
 					+fw(400)
 					color: color-get($mau,text-2)
